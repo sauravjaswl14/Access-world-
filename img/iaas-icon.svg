@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="126" viewBox="0 0 210 126">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_40" data-name="Rectangle 40" width="53.971" height="80" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="iaas-icon" transform="translate(-165 -744)">
+    <text id="Infrastructure_as_a_Service" data-name="Infrastructure as a Service" transform="translate(270 866)" fill="#4d4d4d" font-size="18" font-family="Lato-Bold, Lato" font-weight="700"><tspan x="-104" y="0">Infrastructure as a Service</tspan></text>
+    <g id="iaas-icon-2" data-name="iaas-icon" transform="translate(243 744)">
+      <g id="Group_16" data-name="Group 16" clip-path="url(#clip-path)">
+        <path id="Path_37" data-name="Path 37" d="M108.423,115.806a6.463,6.463,0,0,1-6.233,6.658H86.554a7.926,7.926,0,0,1-.733-15.723,10.1,10.1,0,0,1,8.573-6.126c5.4-.308,9.792,4.054,10.546,9.218a6.707,6.707,0,0,1,3.484,5.973" transform="translate(-66.828 -84.881)" fill="#e5e5e5"/>
+        <path id="Path_38" data-name="Path 38" d="M27.678.007C27.449,0,27.216,0,26.985,0s-.464,0-.693.007C6.5.469-5.946,21.589,2.89,39.3L9.452,52.452,21.505,76.609a6.123,6.123,0,0,0,10.96,0L44.518,52.452,51.08,39.3C59.916,21.589,47.466.469,27.678.007m-.693,46.47a18.31,18.31,0,1,1,18.31-18.31,18.309,18.309,0,0,1-18.31,18.31" transform="translate(0.001 0)" fill="#29aae1"/>
+      </g>
+    </g>
+  </g>
+</svg>

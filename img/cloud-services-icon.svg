@@ -1,0 +1,15 @@
+<svg id="cloud-services-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="78.613" viewBox="0 0 80 78.613">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_268" data-name="Rectangle 268" width="80" height="78.613" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_559" data-name="Group 559" clip-path="url(#clip-path)">
+    <path id="Path_566" data-name="Path 566" d="M12.16,431.379a6.08,6.08,0,1,1-6.08-6.08,6.08,6.08,0,0,1,6.08,6.08" transform="translate(0 -358.846)" fill="#00893b"/>
+    <path id="Path_567" data-name="Path 567" d="M446.336,431.379a6.08,6.08,0,1,1-6.08-6.08,6.08,6.08,0,0,1,6.08,6.08" transform="translate(-366.336 -358.846)" fill="#00893b"/>
+    <path id="Path_568" data-name="Path 568" d="M229.248,431.379a6.08,6.08,0,1,1-6.08-6.08,6.08,6.08,0,0,1,6.08,6.08" transform="translate(-183.168 -358.846)" fill="#00893b"/>
+    <rect id="Rectangle_266" data-name="Rectangle 266" width="3.917" height="19.656" transform="translate(38.042 49.357)" fill="#00893b"/>
+    <rect id="Rectangle_267" data-name="Rectangle 267" width="67.84" height="3.917" transform="translate(6.08 70.575)" fill="#00893b"/>
+    <path id="Path_569" data-name="Path 569" d="M107.192,35.2c0,8.5-6.472,15.412-14.429,15.412h-36.2c-9.384,0-17.016-8.184-17.016-18.243,0-9.447,6.729-17.238,15.319-18.154C58.564,5.993,66.092.528,74.714.035,87.207-.677,97.38,9.419,99.127,21.375A15.525,15.525,0,0,1,107.192,35.2" transform="translate(-33.371 0)" fill="#e5e5e5"/>
+  </g>
+</svg>

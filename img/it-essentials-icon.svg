@@ -1,0 +1,13 @@
+<svg id="it-essentials-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_269" data-name="Rectangle 269" width="80" height="80" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_561" data-name="Group 561" clip-path="url(#clip-path)">
+    <path id="Path_570" data-name="Path 570" d="M20.277,281.119H0a40.2,40.2,0,0,0,36.075,36.075V296.917a20.128,20.128,0,0,1-15.8-15.8" transform="translate(0 -237.194)" fill="#29aae1"/>
+    <path id="Path_571" data-name="Path 571" d="M0,36.075H20.277a20.125,20.125,0,0,1,15.8-15.8V0A40.2,40.2,0,0,0,0,36.075" fill="#e5e5e5"/>
+    <path id="Path_572" data-name="Path 572" d="M296.916,36.075h20.279A40.2,40.2,0,0,0,281.119,0V20.279a20.127,20.127,0,0,1,15.8,15.8" transform="translate(-237.194)" fill="#29aae1"/>
+    <path id="Path_573" data-name="Path 573" d="M281.119,296.917v20.277a40.2,40.2,0,0,0,36.075-36.075H296.916a20.126,20.126,0,0,1-15.8,15.8" transform="translate(-237.194 -237.194)" fill="#e5e5e5"/>
+  </g>
+</svg>

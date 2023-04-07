@@ -14,10 +14,13 @@
 }
 
 .hamburger {
+  display: block;
+  margin-right: 30px;
   cursor: pointer;
   width: 24px;
   height: 24px;
   transition: all 0.25s;
+  margin-right: 25px;
   position: relative;
 }
 

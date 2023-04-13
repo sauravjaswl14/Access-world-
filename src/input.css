@@ -60,3 +60,10 @@
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+/* @media screen and (max-width: 480px) {
+  #about-section .about-img {
+    background-image: url(../img/blank_billboard.png);
+    width: 150px;
+  }
+} */

@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/main.css" />
-    <title>Login to your account</title>
+    <title>Registration OTP</title>
   </head>
   <body>
     <header id="navbar" class="sticky top-0 border-b shadow-sm bg-white z-30">
@@ -247,103 +247,65 @@
         </div>
       </nav>
     </header>
-    <!-- Login Section -->
-    <section id="login">
-      <div class="flex flex-col max-w-screen lg:h-screen md:flex-row">
-        <div class="login-img relative bg-contain bg-center">
-          <img src="../img/bg-image@2x.png" alt="" class="h-full" />
+
+    <section class="bg-[#e5e5e5]">
+      <div class="container max-w-screen h-full mx-auto p-10">
+        <div class="flex flex-col items-center justify-between space-y-6">
+          <h2 class="text-3xl text-[#0000cc] font-bold text-center">
+            Verification
+          </h2>
+          <p class="text-center text-xl text-[#4d4d4d] font-bold">
+            Please enter the six digit OTP verification code sent to your
+            registered number
+          </p>
+          <!-- Flex Container -->
           <div
-            class="absolute top-10 flex flex-col space-y-2 lg:space-y-6 items-center justify-center lg:top-[200px] lg:left-[140px] lg:max-w-md lg:items-start"
+            class="container max-w-sm flex space-x-2 justify-center text-[#4d4d4d]"
           >
-            <h2 class="text-white text-2xl font-bold lg:text-4xl">
-              The access to your world
-            </h2>
-            <p
-              class="text-white lg:text-2xl font-bold max-w-sm ml-12 lg:ml-0 lg:max-w-lg"
-            >
-              Unlock your account and step into a world of personalized
-              experiences, tailored just for you.
-            </p>
-            <p class="text-white lg:text-xl font-bold">
-              Dont have an account yet?
-            </p>
-            <p
-              class="text-white lg:text-2xl underline underline-white underline-offset-4 font-bold"
-            >
-              Create a new account now
-            </p>
+            <input
+              type="text"
+              class="flex flex-1 justify-center items-center bg-white w-6 h-10 py-[30px] px-[40px] text-2xl text-[#4d4d4d] rounded-md outline-none"
+            />
+            <input
+              type="text"
+              class="flex flex-1 justify-center items-center bg-white w-7 h-10 py-[30px] px-[40px] text-2xl text-[#4d4d4d] rounded-md outline-none"
+            />
+            <input
+              type="text"
+              class="flex flex-1 justify-center items-center bg-white w-7 h-10 py-[30px] px-[40px] text-2xl text-[#4d4d4d] rounded-md outline-none"
+            />
+            <input
+              type="text"
+              class="flex flex-1 justify-center items-center bg-white w-7 h-10 py-[30px] px-[40px] text-2xl text-[#4d4d4d] rounded-md outline-none"
+            />
+            <input
+              type="text"
+              class="flex flex-1 justify-center items-center bg-white w-7 h-10 py-[30px] px-[40px] text-2xl text-[#4d4d4d] rounded-md outline-none"
+            />
+            <input
+              type="text"
+              class="flex flex-1 justify-center items-center bg-white w-7 h-10 py-[30px] px-[40px] text-2xl text-[#4d4d4d] rounded-md outline-none"
+            />
           </div>
-        </div>
-        <!-- Form -->
-        <div class="flex flex-col p-10 bg-[#E5E5E5] lg:w-[830px]">
-          <h3 class="uppercase font-bold text-2xl text-[#4d4d4d] mb-10">
-            login
-          </h3>
-          <form class="flex flex-col space-y-8 text-[#4d4d4d]">
-            <label for="username">Username</label>
-            <div class="flex space-x-10 bg-white py-5 px-10 rounded-lg">
-              <div>
-                <img src="../img/user-circle-svgrepo-com.svg" alt="" />
-              </div>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Type your usrname here"
-                class="border-none placeholder:text-gray-400"
-              />
-            </div>
+          <p class="text-sm text-[#4d4d4d]">Resending code in 00:58</p>
+          <p>
+            Didn't get the code yet?
+            <button
+              class="text-[#0000cc] outline-none border-b-2 border-[#0000cc]"
+            >
+              Resend code
+            </button>
+          </p>
 
-            <label for="password">Password</label>
-            <div class="flex space-x-10 bg-white py-5 px-10 rounded-lg">
-              <div>
-                <img src="../img/lock-circle.svg" alt="" />
-              </div>
-              <input
-                type="text"
-                id="password"
-                name="password"
-                placeholder="Type your password here"
-                class="border-none placeholder:text-gray-400"
-              />
-            </div>
-
-            <div class="flex justify-between">
-              <div>
-                <input type="checkbox" class="accent-purple-500" checked /> Keep
-                me logged in
-              </div>
-              <p
-                class="text-[#0000cc] text-sm border-b-2 border-spacing-0 border-[#0000cc]"
-              >
-                Forgot Password
-              </p>
-            </div>
-            <!--login button -->
-            <div class="flex items-center justify-center mt-10">
-              <button
-                type="submit"
-                class="flex items-center justify-center w-[260px] h[44px] bg-[#0000cc] text-white py-3 px-5 rounded-lg"
-              >
-                Login
-              </button>
-            </div>
-          </form>
-
-          <div
-            class="mt-10 flex flex-col items-center s justify-center lg:mt-20"
+          <button
+            class="flex items-center justify-center py-3 px-5 w-[260px] h-[44px] bg-[#0000cc] text-white rounded-lg"
           >
-            <p class="text-xs text-[#4d4d4d]">Don't have an account yet?</p>
-            <p lass=" text-xs mb-10 text-[#4d4d4d]">Let's create one</p>
-            <a
-              href="#"
-              class="flex items-center mt-4 justify-center py-2 px-4 w-[110px] h-[44px] bg-[#cbcbcb] rounded-lg"
-              >Sign Up</a
-            >
-          </div>
+            Verify
+          </button>
         </div>
       </div>
     </section>
+
     <!-- Footer -->
     <footer>
       <div
@@ -434,6 +396,7 @@
         </div>
       </div>
     </footer>
+
     <script src="../js/script.js"></script>
   </body>
 </html>

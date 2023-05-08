@@ -128,17 +128,20 @@
               <div class="group flex flex-col">
                 <!-- Dropdown -->
                 <div
-                  class="hidden w-[122px] h-[40px] border-2 border-black rounded-md text-center items-center justify-center lg:inline-flex group-hover:cursor-pointer"
+                  class="hidden w-[122px] h-[40px] border-2 border-black rounded-md text-center items-center justify-center lg:flex lg:space-x-8 group-hover:cursor-pointer"
                 >
                   <select
                     name=""
                     id="currency"
-                    class="group-hover:cursor-pointer focus:outline-none"
+                    class="space-x-8 group-hover:cursor-pointer focus:outline-none px-2 appearance-none"
                   >
                     <option value="currency">NPR</option>
                     <option value="currency">INR</option>
                     <option value="currency">USD</option>
                   </select>
+                  <div class="">
+                    <img src="../img/icons/Polygon 5.png" alt="" />
+                  </div>
                 </div>
 
                 <!-- social -->
@@ -248,6 +251,101 @@
       </nav>
     </header>
 
+    <!-- Navbar Details section -->
+    <section class="bg-[#e5e5e5]">
+      <div class="container w-screen">
+        <!-- parent flex container -->
+        <div class="flex flex-col md:flex-row">
+          <!-- left flex container -->
+          <div
+            class="flex flex-col space-y-4 pl-24 pr-8 py-4 border-r-4 border-r-gray-400"
+          >
+            <p class="text-[18px] text-[#4d4d4d] font-bold">Compute</p>
+            <p class="text-[18px] text-[#4d4d4d] font-bold">Security</p>
+            <p class="text-[18px] text-[#4d4d4d] font-bold whitespace-nowrap">
+              Infrastructure as a Service
+            </p>
+            <p class="text-[18px] text-[#4d4d4d] font-bold">Cloud Services</p>
+            <p class="text-[18px] text-[#4d4d4d] font-bold">
+              Management & Support
+            </p>
+            <p class="text-[18px] text-[#4d4d4d] font-bold">
+              Solution as a Service
+            </p>
+            <p class="text-[18px] text-[#0000cc] font-bold">Data Protection</p>
+            <p class="text-[18px] text-[#4d4d4d] font-bold">Managed Security</p>
+            <p class="text-[18px] text-[#4d4d4d] font-bold">IT Essentials</p>
+            <p class="text-[18px] text-[#4d4d4d] font-bold">Storage</p>
+            <p class="text-[18px] text-[#4d4d4d] font-bold">Collaboration</p>
+          </div>
+          <!-- right flex container -->
+          <div class="flex flex-col space-y-6 p-4 pr-8">
+            <h2 class="text-[24px] font-bold text-[#4d4d4d]">
+              Data Protection
+            </h2>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-3 md:grid-rows-2">
+              <div class="flex flex-col space-y-2">
+                <h4 class="text-[#4d4d4d] text-[16px] font-bold">
+                  Data Recovery as a Service
+                </h4>
+                <p class="max-w-lg text-sm text-[#4d4d4d]">
+                  Robust cloud architecture that delivers the perfect balance of
+                  speed and reliability
+                </p>
+              </div>
+              <div class="flex flex-col space-y-2">
+                <h4 class="text-[#4d4d4d] text-[16px] font-bold">
+                  Backup & Replication
+                </h4>
+                <p class="max-w-lg text-sm text-[#4d4d4d]">
+                  Secured and controlled hosting environment with redundant
+                  power and internet connections, technical support, and on-site
+                  maintenance
+                </p>
+              </div>
+              <div class="flex flex-col space-y-2">
+                <h4 class="text-[#4d4d4d] text-[16px] font-bold">
+                  AWT DataVault
+                </h4>
+                <p class="max-w-lg text-sm text-[#4d4d4d]">
+                  Secured and controlled hosting environment with redundant
+                  power and internet connection, technical support, and on-site
+                  maintenance
+                </p>
+              </div>
+              <div class="flex flex-col space-y-2">
+                <h4 class="text-[#4d4d4d] text-[16px] font-bold">Data Share</h4>
+                <p class="max-w-lg text-sm text-[#4d4d4d]">
+                  Robust cloud architecture that delivers the perfect balance of
+                  speed and reliability
+                </p>
+              </div>
+              <div class="flex flex-col space-y-2">
+                <h4 class="text-[#4d4d4d] text-[16px] font-bold">
+                  Office 365 Backup
+                </h4>
+                <p class="max-w-lg text-sm text-[#4d4d4d]">
+                  Secured and controlled hosting environment with redundant
+                  power and internet connection, technical support, and on-site
+                  maintenance
+                </p>
+              </div>
+              <div class="flex flex-col space-y-2">
+                <h4 class="text-[#4d4d4d] text-[16px] font-bold">
+                  Office 365 Backup
+                </h4>
+                <p class="max-w-lg text-sm text-[#4d4d4d]">
+                  Secured and controlled hosting environment with redundant
+                  power and internet connection, technical support, and on-site
+                  maintenance
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- hero section -->
     <section id="hero" class="p-6">
       <div class="lg:max-w-[1920px] lg:h-[450px]">
@@ -297,7 +395,7 @@
         </h3>
         <!-- Services list -1 -->
         <div
-          class="grid grid-cols-2 gap-7 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 xl:gap-7"
+          class="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 xl:gap-7"
         >
           <!-- Item-1 -->
           <div
@@ -306,7 +404,7 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/compute.svg" alt="" />
+                <img src="../img/new/compute.png" alt="" />
               </div>
               <!-- <p class="">Compute</p> -->
             </div>
@@ -319,7 +417,7 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/security.svg" alt="" />
+                <img src="../img/new/security.png" alt="" />
               </div>
               <!-- <p class="">Compute</p> -->
             </div>
@@ -332,7 +430,7 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/iaas-icon.svg" alt="" />
+                <img src="../img/new/iaas-icon.png" alt="" />
               </div>
               <!-- <p class="">Compute</p> -->
             </div>
@@ -345,7 +443,7 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/cloud-services-icon.svg" alt="" />
+                <img src="../img/new/cloud-services-icon.png" alt="" />
               </div>
               <p class="font-thin text-sm">Cloud Services</p>
             </div>
@@ -358,7 +456,7 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/management&support - icon.svg" alt="" />
+                <img src="../img/new/management&support - icon.png" alt="" />
               </div>
               <p class="font-thin text-sm">
                 Management & <br />
@@ -374,12 +472,16 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/saas-icon.svg" alt="" />
+                <img src="../img/new/saas-icon.png" alt="" />
               </div>
               <p class="font-thin text-sm">Solution as a service</p>
             </div>
           </div>
-
+        </div>
+        <hr class="hidden md:block md:mt-10" />
+        <div
+          class="mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 xl:gap-7"
+        >
           <!-- Item-7 -->
           <div
             class="flex items-center justify-center px-8 hover:cursor-pointer"
@@ -387,7 +489,11 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/database-protection-svgrepo-com.svg" alt="" />
+                <img
+                  src="../img/new/dataProtection.png"
+                  class="w-24 bg-white rounded full"
+                  alt=""
+                />
               </div>
               <p class="font-thin text-sm">Data Protection</p>
             </div>
@@ -399,7 +505,7 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/managed-security-icon.svg" alt="" />
+                <img src="../img/new/managed-security-icon.png" alt="" />
               </div>
               <p class="font-thin text-sm">Managed Security</p>
             </div>
@@ -411,7 +517,7 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/it-essentials-icon.svg" alt="" />
+                <img src="../img/new/it-essentials-icon.png" alt="" />
               </div>
               <p class="font-thin text-sm">IT Essentials</p>
             </div>
@@ -423,7 +529,7 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/storage-icon.svg" alt="" />
+                <img src="../img/new/storage-icon.png" alt="" />
               </div>
               <p class="font-thin text-sm">Storage</p>
             </div>
@@ -435,13 +541,98 @@
             <div class="flex flex-col space-y-4">
               <div>
                 <!-- svg -->
-                <img src="../img/it-essentials-icon.svg" alt="" />
+                <img src="../img/new/collaboration-icon.png" alt="" />
               </div>
               <p class="font-thin text-sm">Collaboration</p>
             </div>
           </div>
+        </div>
 
-          <!-- End of Services -->
+        <!-- End of Services -->
+      </div>
+    </section>
+
+    <!-- Service Modal -->
+    <section id="modal">
+      <div
+        class="container bg-[#e5e5e5] mt-10 p-8 max-w-full lg:h-[710px] md:p-5"
+      >
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-4 md:grid-rows-2">
+          <!-- Flex Container -->
+          <div class="flex flex-col space-y-5 max-w-sm">
+            <div class="flex space-x-2">
+              <!-- icon -->
+              <img src="../img/icons/cloud-server-icon.png" alt="" />
+              <!-- heading -->
+              <h4>Cloud Server</h4>
+            </div>
+            <p>
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+          </div>
+          <!-- flex container -->
+          <div class="flex flex-col space-y-5 max-w-sm">
+            <div class="flex space-x-2">
+              <!-- icon -->
+              <img src="../img/icons/private-cloud-icon.png" alt="" />
+              <!-- heading -->
+              <h4>Private Cloud</h4>
+            </div>
+            <p>
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+          </div>
+          <div class="flex flex-col space-y-5 max-w-sm">
+            <div class="flex space-x-2">
+              <!-- icon -->
+              <img src="../img/icons/draas-icon.png" alt="" />
+              <!-- heading -->
+              <h4>Data Recovery as a Service</h4>
+            </div>
+            <p>
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+          </div>
+          <div class="flex flex-col space-y-5 max-w-sm">
+            <div class="flex space-x-2">
+              <!-- icon -->
+              <img src="../img/icons/backup-repli-icon.png" alt="" />
+              <!-- heading -->
+              <h4>Backup & Replication</h4>
+            </div>
+            <p>
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+          </div>
+          <div class="flex flex-col space-y-5 max-w-sm">
+            <div class="flex space-x-2">
+              <!-- icon -->
+              <img src="../img/icons/data-vault-icon.png" alt="" />
+              <!-- heading -->
+              <h4>AWT DataVault</h4>
+            </div>
+            <p>
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+          </div>
+          <div class="flex flex-col space-y-5 max-w-sm">
+            <div class="flex space-x-2">
+              <!-- icon -->
+              <img src="../img/icons/data-share-icon.png" alt="" />
+              <!-- heading -->
+              <h4>Data Share</h4>
+            </div>
+            <p>
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -707,7 +898,7 @@
       </div>
     </section>
 
-    <!--  -->
+    <!--Description  -->
     <section>
       <div class="max-w-screen mx-auto mt-12 mb-12">
         <div

@@ -4,16 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="../css/main.css" />
-    <title>Registration OTP</title>
+    <title>About Overview</title>
   </head>
-  <body>
+  <body class="relative">
     <header id="navbar" class="sticky top-0 border-b shadow-sm bg-white z-30">
       <nav class="relative">
         <!-- Flex Container -->
@@ -128,17 +122,20 @@
               <div class="group flex flex-col">
                 <!-- Dropdown -->
                 <div
-                  class="hidden w-[122px] h-[40px] border-2 border-black rounded-md text-center items-center justify-center lg:inline-flex group-hover:cursor-pointer"
+                  class="hidden w-[122px] h-[40px] border-2 border-black rounded-md text-center items-center justify-center lg:flex lg:space-x-8 group-hover:cursor-pointer"
                 >
                   <select
                     name=""
                     id="currency"
-                    class="group-hover:cursor-pointer focus:outline-none"
+                    class="space-x-8 group-hover:cursor-pointer focus:outline-none px-2 appearance-none"
                   >
                     <option value="currency">NPR</option>
                     <option value="currency">INR</option>
                     <option value="currency">USD</option>
                   </select>
+                  <div class="">
+                    <img src="../img/icons/Polygon 5.png" alt="" />
+                  </div>
                 </div>
 
                 <!-- social -->
@@ -146,12 +143,12 @@
                   class="absolute top-0 right-4 mt-3 flex space-x-3 items-center lg:relative lg:ml-4"
                 >
                   <!-- Medium -->
-                  <a href="#" class="">
+                  <a href="#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill-rule="evenodd"
                       clip-rule="evenodd"
-                      class="w-5 h-5 md:w-[24px] md:h-[24px] rounded-md hover:scale-110"
+                      class="w-5 h-5 md:w-[24px] md:h-[24px] rounded-md"
                     >
                       <path
                         d="M24 24h-24v-24h24v24zm-4.03-5.649v-.269l-1.247-1.224c-.11-.084-.165-.222-.142-.359v-8.998c-.023-.137.032-.275.142-.359l1.277-1.224v-.269h-4.422l-3.152 7.863-3.586-7.863h-4.638v.269l1.494 1.799c.146.133.221.327.201.523v7.072c.044.255-.037.516-.216.702l-1.681 2.038v.269h4.766v-.269l-1.681-2.038c-.181-.186-.266-.445-.232-.702v-6.116l4.183 9.125h.486l3.593-9.125v7.273c0 .194 0 .232-.127.359l-1.292 1.254v.269h6.274z"
@@ -159,11 +156,11 @@
                     </svg>
                   </a>
                   <!-- Facebook -->
-                  <a href="#" class="">
+                  <a href="#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
-                      class="w-5 h-5 md:w-[24px] md:h-[24px] rounded-md hover:scale-110"
+                      class="w-5 h-5 md:w-[24px] md:h-[24px] rounded-md"
                     >
                       <path
                         d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
@@ -247,192 +244,54 @@
         </div>
       </nav>
     </header>
-
-    <section class="bg-[#e5e5e5]">
-      <div class="container max-w-screen h-full mx-auto p-10">
-        <div class="flex flex-col items-center justify-between space-y-6">
-          <h2 class="text-3xl text-[#0000cc] font-bold text-center">
-            Verification
-          </h2>
-          <p class="text-center text-xl text-[#4d4d4d] font-bold">
-            Please enter the six digit OTP verification code sent to your
-            registered number
-          </p>
-          <!-- Flex Container -->
-          <div
-            class="container max-w-sm flex space-x-2 justify-center text-[#000]"
-          >
-            <!-- <input
-              type="text"
-              placeholder="2"
-              value="2"
-              class="flex flex-1 justify-center items-center bg-white w-6 h-10 py-[30px] px-[35px] text-lg text-[#000] rounded-md outline-none placeholder:text-sm placeholder:text-slate-500"
-            /> -->
-            <div
-              class="relative flex justify-center items-center bg-white w-6 h-10 py-[30px] px-[35px] text-sm text-[#000] rounded-md"
+    <!-- hero section -->
+    <section
+      class="p-6 bg-gradient-to-r from-[#0000cc] to-[#000066] overflow-hidden"
+    >
+      <div class="max-w-screen lg:h-[450px]">
+        <div class="flex flex-col-reverse space-y-10 lg:flex-row">
+          <div class="flex flex-col space-y-10 lg:items-left lg:ml-[140px]">
+            <h2
+              class="text-3xl font-bold text-white ml-5 mt-10 lg:mt-[68px] lg:text-5xl lg:mb-[60px] lg:max-w-3xl leading-loose md:mb-[45px]"
             >
-              <input
-                type="text"
-                class="left-7 absolute outline-none w-4 placeholder:text-black"
-                placeholder="2"
-              />
-            </div>
-            <div
-              class="relative flex justify-center items-center bg-white w-6 h-10 py-[30px] px-[35px] text-sm text-[#000] rounded-md"
-            >
-              <input
-                type="text"
-                class="left-7 absolute outline-none w-4 placeholder:text-black"
-                placeholder="4"
-              />
-            </div>
-            <div
-              class="relative flex justify-center items-center bg-white w-6 h-10 py-[30px] px-[35px] text-sm text-[#000] rounded-md"
-            >
-              <input
-                type="text"
-                class="left-7 absolute outline-none w-4 placeholder:text-black"
-                placeholder="7"
-              />
-            </div>
-            <div
-              class="relative flex justify-center items-center bg-white w-6 h-10 py-[30px] px-[35px] text-sm text-[#000] rounded-md"
-            >
-              <input
-                type="text"
-                class="left-7 absolute outline-none w-4 placeholder:text-black"
-                placeholder="8"
-              />
-            </div>
-            <div
-              class="relative flex justify-center items-center bg-white w-6 h-10 py-[30px] px-[35px] text-sm text-[#000] rounded-md"
-            >
-              <input
-                type="text"
-                class="left-7 absolute outline-none w-4 placeholder:text-black"
-                placeholder="6"
-              />
-            </div>
-            <div
-              class="relative flex justify-center items-center bg-white w-6 h-10 py-[30px] px-[35px] text-sm text-[#000] rounded-md"
-            >
-              <input
-                type="text"
-                class="left-7 absolute outline-none w-4 placeholder:text-black"
-                placeholder="9"
-              />
+              A one-stop solution for all your cloud computing needs
+            </h2>
+            <div class="ml-6">
+              <a
+                href="#"
+                class="font-bold text-white w-[220px] h-[44px] px-[64px] py-[11px] border-[1.5px] border-[#fff] rounded-md hover:bg-slate-400 duration-150"
+                >Contact Us</a
+              >
             </div>
           </div>
-          <p class="text-sm text-[#4d4d4d]">Resending code in 00:58</p>
-          <p>
-            Didn't get the code yet?
-            <button
-              class="text-[#0000cc] outline-none border-b-2 border-[#0000cc]"
-            >
-              Resend code
-            </button>
-          </p>
 
-          <button
-            class="flex items-center justify-center py-3 px-5 w-[260px] h-[44px] bg-[#0000cc] text-white rounded-lg hover:bg-gray-400 hover:text-[#0000cc] duration-200"
-          >
-            Verify
-          </button>
+          <img
+            src="../img/illustration@2x.png"
+            class="lg:w-[674px] lg:h-[450px] lg:absolute lg:top-[189px] lg:right-[60px] lg:z-30"
+            alt=""
+          />
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div
-        class="max-w-screen bg-[#292929] text-white p-6 lg:p-20 lg:pb-4 md:h-[400px]"
-      >
-        <!-- Flex container -->
-        <div class="flex justify-between space-x-16">
-          <!-- Logo and social -->
-          <div class="flex flex-col space-y-2 md:space-y-16">
-            <!-- logo -->
-            <div class="max-w-sm">
-              <img src="../img/awt-acronym-logo.svg" alt="" />
-            </div>
-            <!-- social flex -->
-            <div class="flex max-w-sm space-x-2">
-              <div>
-                <img src="../img/icon-medium.svg" alt="" />
-              </div>
-              <div>
-                <img src="../img/icon-facebook-square.svg" alt="" />
-              </div>
-              <div>
-                <img src="../img/icon-instagram.svg" alt="" />
-              </div>
-              <div>
-                <img src="../img/icon-linkedin.svg" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <!-- About,services,solutions etc. -->
-          <div class="flex space-x-6">
-            <div class="flex flex-col space-y-4">
-              <a href="#" class="text-white font-medium">About</a>
-              <a href="#" class="text-white font-medium">Services</a>
-              <a href="#" class="text-white font-medium">Solutions</a>
-            </div>
-            <div class="flex flex-col space-y-4">
-              <a href="#" class="font-medium">Privacy Policy</a>
-              <a href="#" class="font-medium">Terms & Conditions</a>
-              <a href="#" class="font-medium">Sitemap</a>
-            </div>
-            <div class="hidden md:flex md:flex-col md:space-y-6">
-              <a
-                href="#"
-                class="flex justify-center items-center w-[260px] h-[44px] py-3 px-5 border-2 border-white rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
-                >Login</a
-              >
-              <div
-                class="flex items-center border-2 justify-between w-[398px] h-[44px] bg-white rounded-xl active:border-green-500"
-              >
-                <input
-                  type="text"
-                  class="border-none placeholder:text-gray-400 pl-2 focus:outline-none text-black"
-                  placeholder="Enter your search"
-                />
-                <button>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="cursor-pointer pr-4 w-10 h-10 font-extrabold text-gray-500"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Flex-container  -->
-        <div
-          class="mt-6 flex flex-col justify-center space-y-2 md:justify-start md:flex-row md:space-y-0 md:space-x-16 lg:mt-16"
-        >
-          <p class="text-xs md:text-sm">
-            &copy; Copyright 2012-2023| AccessWorld Tech P.(L)
-          </p>
-          <p class="text-xs md:text-sm">
-            Patan Dhoka, 5F BhatBhateni Super Market, Krishna Galli, Lalitpur,
-            Nepal
-          </p>
-        </div>
+    <section>
+      <div class="flex flex-col space-y-4 max-w-xl my-10 mx-20 text-[#4d4d4d]">
+        <h2 class="text-3xl font-bold">
+          A comprehensive cloud service provider of Nepal
+        </h2>
+        <p>
+          A comprehensive cloud service provider, empowering users to harness
+          the full potential of cloud computing without incurring costly
+          investments in technology or human resources since 2013.
+        </p>
+        <p>
+          AccessWorld Tech's services are in compliance with international
+          standards, as evidenced by our achievement of three ISO certificates
+          for Quality Management (ISO 9001:2015), Information Technology Service
+          Management(ISO 20000-1:2018), and Information Security Management (ISO
+          27001:2013).
+        </p>
       </div>
-    </footer>
-
-    <script src="../js/script.js"></script>
+    </section>
   </body>
 </html>

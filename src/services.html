@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/main.css" />
     <title>Services Main Page</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header id="navbar" class="sticky top-0 border-b shadow-sm bg-white z-30">
       <nav class="relative">
         <!-- Flex Container -->
@@ -241,17 +241,19 @@
     <section>
       <div class="mt-16 mb-32 mx-10">
         <div
-          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-32 text-[#4d4d4d] pb-2 mx-10 mr-[1024px]"
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
         >
           Compute
         </div>
-        <div class="flex space-x-8 mx-10 text-[#4d4d4d]">
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+        <div class="flex space-x-8 lg:mx-10 text-[#4d4d4d]">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-4 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-2">
               <img src="../img/icons/cloud-server-icon.png" alt="" />
-              <p>Cloud Server</p>
+              <p class="font-bold text-sm lg:text-base">Cloud Server</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Robust cloud architecture that derives the perfect balance of
               speed and reliability
             </p>
@@ -263,12 +265,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-4 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 p-4 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-2">
               <img src="../img/icons/private-cloud-icon.png" alt="" />
-              <p>Private Cloud</p>
+              <p class="font-bold text-sm lg:text-base">Private Cloud</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Secured and controlled hosting environment with redundant power
               and internet connections, technical support and on-site
               maintenance
@@ -287,19 +291,21 @@
     <section>
       <div class="mx-10 my-20">
         <div
-          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-32 text-[#4d4d4d] pb-2 mx-10 mr-[1024px]"
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
         >
           Security
         </div>
         <div
-          class="grid grid-cols-2 gap-6 mx-6 text-[#4d4d4d] lg:grid-cols-4 p-6"
+          class="grid grid-cols-2 gap-6 text-[#4d4d4d] lg:grid-cols-4 p-2 lg:p-6 lg:mx-6"
         >
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/ssl-icon.png" alt="" />
-              <p>SSL</p>
+              <p class="font-bold text-sm lg:text-base">SSL</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               A cutting-edge encryption which uses both public and symmetric
               keys to safeguard your web browser
             </p>
@@ -311,12 +317,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 p-2 border-b-2 border-black lg:space-y-6 lg:p-6"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/end-point-icon.png" alt="" />
-              <p>Endpoint Security</p>
+              <p class="font-bold text-sm lg:text-base">Endpoint Security</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Benefit from real-time monitoring and automatic updates for
               round-the-clock protection
             </p>
@@ -328,12 +336,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 p-2 border-b-2 border-black lg:space-y-6 lg:p-6"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/soar-icon.png" alt="" />
-              <p>SOAR</p>
+              <p class="font-bold text-sm lg:text-base">SOAR</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Unlock the full potential of your SecOps team by streaming
               incident response and automation with Cloud SOAR
             </p>
@@ -345,12 +355,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 p-2 border-b-2 border-black lg:p-6 lg:space-y-6"
+          >
+            <div class="flex space-x-4 lg:space-x-2">
               <img src="../img/icons/managed-soc-icon.png" alt="" />
-              <p>Managed SOC Services</p>
+              <p class="font-bold text-sm lg:text-base">Managed SOC Services</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Providing you an AI-based platform using machine learning for
               real-time threat detection and response
             </p>
@@ -362,12 +374,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/email-gateway-icon.png" alt="" />
-              <p>Email Gateway as a Service</p>
+              <p class="font-bold text-sm">Email Gateway as a Service</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Reliable secure email service for your business with our advanced
               email gateway solution
             </p>
@@ -385,17 +399,19 @@
     <section>
       <div class="my-32 mx-10">
         <div
-          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-10 text-[#4d4d4d] pb-2 mx-10 mr-[1024px]"
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-10 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
         >
           Infrastructure as a Service
         </div>
-        <div class="flex space-x-8 mx-10 text-[#4d4d4d]">
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+        <div class="flex space-x-8 lg:mx-10 text-[#4d4d4d]">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/co-location-icon.png" alt="" />
-              <p>Co-Location</p>
+              <p class="font-bold text-sm lg:text-base">Co-Location</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Secured and controled hosting environment with redundant power and
               internet connection, technical support, and on-site maintanance
             </p>
@@ -407,12 +423,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-4 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/baremetal-server-icon.png" alt="" />
-              <p>BareMetal Server</p>
+              <p class="font-bold text-sm lg:text-base">BareMetal Server</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Lightning-fast performance featuring powerful processors and
               dedicated resources for unmatched speed and reliability
             </p>
@@ -430,19 +448,21 @@
     <section>
       <div class="mx-10 my-20">
         <div
-          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 mx-10 mr-[1024px]"
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
         >
           Cloud Services
         </div>
         <div
-          class="grid grid-cols-2 gap-6 mx-6 text-[#4d4d4d] lg:grid-cols-4 p-6"
+          class="grid grid-cols-2 gap-6 lg:mx-6 text-[#4d4d4d] lg:grid-cols-4 p-2 lg:p-6"
         >
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/hosting-services-icon.png" alt="" />
-              <p>Hosting Services</p>
+              <p class="font-bold text-sm lg:text-base">Hosting Services</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Robust cloud architecture that delivers the perfect balance of
               speed and reliability
             </p>
@@ -454,12 +474,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/web-hosting-icon.png" alt="" />
-              <p>Web Hosting</p>
+              <p class="font-bold text-sm lg:text-base">Web Hosting</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Robust cloud architecture that delivers the perfect balance of
               speed and reliability
             </p>
@@ -471,12 +493,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/dns-icon.png" alt="" />
-              <p>DNS Service</p>
+              <p class="font-bold text-sm lg:text-base">DNS Service</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Robust cloud architecture that delivers the perfect balance of
               speed and reliability
             </p>
@@ -488,12 +512,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/buy-domain-icon.png" alt="" />
-              <p>Buy Domain</p>
+              <p class="font-bold text-sm lg:text-base">Buy Domain</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Robust cloud architecture that delivers the perfect balance of
               speed and reliability
             </p>
@@ -505,12 +531,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/c-panel-icon.png" alt="" />
-              <p>Managed cPanel</p>
+              <p class="font-bold text-sm lg:text-base">Managed cPanel</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Reliable secure email service for your business with our advanced
               email gateway solution
             </p>
@@ -528,17 +556,21 @@
     <section>
       <div class="ml-10 my-20">
         <div
-          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-12 text-[#4d4d4d] pb-2 mx-10 mr-[1024px]"
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
         >
           Management & Support
         </div>
         <div
-          class="grid grid-cols-2 gap-6 mx-6 text-[#4d4d4d] lg:grid-cols-4 p-6"
+          class="grid grid-cols-2 gap-6 lg:mx-6 text-[#4d4d4d] lg:grid-cols-4 p-2 lg:p-6"
         >
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/ams-icon.png" alt="" />
-              <p>Annual Maintenance Service</p>
+              <p class="font-bold text-sm lg:text-base">
+                Annual Maintenance Service
+              </p>
             </div>
             <p class="max-w-sm text-sm">
               Monitoring regular system updates security patches and performance
@@ -552,11 +584,34 @@
               <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
             </div>
           </div>
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/server-maintenance-icon.png" alt="" />
+              <p class="font-bold text-sm lg:text-base">Server Maintenance</p>
+            </div>
+            <p class="max-w-2xl text-sm">
+              Entrust us with your server maintenance needs and let us take care
+              of ensuring smooth and uninterrupted server operations for your
+              organization
+            </p>
+            <div class="flex space-x-4">
+              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
+                Learn More
+              </p>
+              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
+            </div>
+          </div>
 
-          <div class="flex flex-col space-y-8 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-6 lg:space-y-8 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/setup-configuration-icon.png" alt="" />
-              <p>Setup and Configuration</p>
+              <p class="font-bold text-sm lg:text-base">
+                Setup and Configuration
+              </p>
             </div>
             <p class="max-w-sm text-sm">
               Expertly set up and configure your cloud servers for optimal
@@ -570,31 +625,15 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-8 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex space-x-4 lg:space-x-2">
               <img src="../img/icons/it-support-icon.png" alt="" />
-              <p>IT Support</p>
+              <p class="font-bold text-sm lg:text-base">IT Support</p>
             </div>
             <p class="max-w-sm text-sm">
               Optimize your business with AWT's expert IT Support service
-            </p>
-            <div class="flex space-x-4">
-              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
-                Learn More
-              </p>
-              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
-            </div>
-          </div>
-
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
-              <img src="../img/icons/server-maintenance-icon.png" alt="" />
-              <p>Server Maintenance</p>
-            </div>
-            <p class="max-w-2xl text-sm">
-              Entrust us with your server maintenance needs and let us take care
-              of ensuring smooth and uninterrupted server operations for your
-              organization
             </p>
             <div class="flex space-x-4">
               <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
@@ -610,13 +649,13 @@
     <section>
       <div class="mt-16 mb-32 mx-10">
         <div
-          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-10 text-[#4d4d4d] pb-2 mx-10 mr-[1024px]"
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
         >
           Solution as a Service
         </div>
-        <div class="flex space-x-8 mx-10 text-[#4d4d4d]">
+        <div class="flex space-x-8 lg:mx-10 text-[#4d4d4d]">
           <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+            <div class="flex items-center space-x-2">
               <img src="../img/icons/goaml-icon.png" alt="" />
               <p class="font-bold">goAML</p>
             </div>
@@ -638,51 +677,65 @@
     <section>
       <div class="mx-10 my-20">
         <div
-          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 mx-10 mr-[1024px]"
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
         >
           Data Protection
         </div>
         <div
-          class="grid grid-cols-2 gap-6 mx-6 text-[#4d4d4d] lg:grid-cols-4 p-6"
+          class="grid grid-cols-2 gap-6 lg:mx-6 text-[#4d4d4d] lg:grid-cols-4 p-4 lg:p-6"
         >
-          <div class="flex flex-col space-y-6 p-4 border-b-2 border-black">
-            <div class="flex space-x-2">
-              <img src="../img/icons/draas-icon.png" alt="" />
-              <p class="font-bold">Data Recovery as a Service</p>
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/draas-icon.png" class="" alt="" />
+
+              <p class="font-bold text-sm lg:text-base">
+                Data Recovery as a Service
+              </p>
             </div>
-            <p class="max-w-sm text-sm">
+            <p class="max-w-lg text-sm">
               Robust cloud architecture that delivers the perfect balance of
               speed and reliability
             </p>
             <div class="flex space-x-4">
-              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
+              <p
+                class="font-bold inline-block border-b-2 border-spacing-6 border-[#CCCCCC]"
+              >
                 Learn More
               </p>
               <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
-              <img src="../img/icons/backup-repli-icon.png" alt="" />
-              <p class="font-bold">Backup & Replication</p>
+          <div
+            class="flex flex-col space-y-7 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/backup-repli-icon.png" class="" alt="" />
+
+              <p class="font-bold text-sm lg:text-base">Backup & Replication</p>
             </div>
             <p class="max-w-sm text-sm">
               Robust cloud architecture that delivers the perfect balance of
               speed and reliability
             </p>
             <div class="flex space-x-4">
-              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
+              <p
+                class="font-bold inline-block border-b-2 border-spacing-6 border-[#CCCCCC]"
+              >
                 Learn More
               </p>
               <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/data-vault-icon.png" alt="" />
-              <p class="font-bold">AWT DataVault</p>
+              <p class="font-bold text-sm lg:text-base">AWT DataVault</p>
             </div>
             <p class="max-w-sm text-sm">
               Robust cloud architecture that delivers the perfect balance of
@@ -696,10 +749,12 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/data-share-icon.png" alt="" />
-              <p class="font-bold">Data Share</p>
+              <p class="font-bold text-sm lg:text-base">Data Share</p>
             </div>
             <p class="max-w-sm text-sm">
               Robust cloud architecture that delivers the perfect balance of
@@ -713,12 +768,14 @@
             </div>
           </div>
 
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
               <img src="../img/icons/o365-icon.png" alt="" />
-              <p class="font-bold">Office365 Backup</p>
+              <p class="font-bold text-sm lg:text-base">Office365 Backup</p>
             </div>
-            <p class="max-w-sm">
+            <p class="max-w-sm text-sm">
               Robust cloud architecture that delivers the perfect balance of
               speed and reliability
             </p>
@@ -729,10 +786,14 @@
               <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
             </div>
           </div>
-          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
-            <div class="flex space-x-2">
-              <img src="../img/icons/o365-icon.png" alt="" />
-              <p class="font-bold">Cloud-to-Cloud Backup</p>
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/cloud-to-cloud-icon.png" alt="" />
+              <p class="font-bold sm:text-sm lg:text-base">
+                Cloud-to-Cloud Backup
+              </p>
             </div>
             <p class="max-w-sm text-sm">
               Robust cloud architecture that delivers the perfect balance of
@@ -748,5 +809,352 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="mx-10 my-20">
+        <div
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
+        >
+          Managed Security
+        </div>
+        <div
+          class="grid grid-cols-2 gap-6 lg:mx-6 text-[#4d4d4d] lg:grid-cols-4 p-4 lg:p-6"
+        >
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/firewall-icon.png" class="" alt="" />
+
+              <p class="font-bold text-sm lg:text-base">
+                Firewall as a Service
+              </p>
+            </div>
+            <p class="max-w-lg text-sm">
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+            <div class="flex space-x-4">
+              <p
+                class="font-bold inline-block border-b-2 border-spacing-6 border-[#CCCCCC]"
+              >
+                Learn More
+              </p>
+              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col space-y-7 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/siem-icon.png" class="" alt="" />
+
+              <p class="font-bold text-sm lg:text-base">SIEM as a Service</p>
+            </div>
+            <p class="max-w-sm text-sm">
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+            <div class="flex space-x-4">
+              <p
+                class="font-bold inline-block border-b-2 border-spacing-6 border-[#CCCCCC]"
+              >
+                Learn More
+              </p>
+              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/soc-icon.png" alt="" />
+              <p class="font-bold text-sm lg:text-base">SOC as a Service</p>
+            </div>
+            <p class="max-w-sm text-sm">
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+            <div class="flex space-x-4">
+              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
+                Learn More
+              </p>
+              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/csa-icon.png" alt="" />
+              <p class="font-bold text-sm lg:text-base">
+                Cyber Security Assessment
+              </p>
+            </div>
+            <p class="max-w-sm text-sm">
+              Robust cloud architecture that delivers the perfect balance of
+              speed and reliability
+            </p>
+            <div class="flex space-x-4">
+              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
+                Learn More
+              </p>
+              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="mt-16 mb-32 mx-10">
+        <div
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
+        >
+          IT Essentials
+        </div>
+        <div class="flex space-x-8 lg:mx-10 text-[#4d4d4d]">
+          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
+            <div class="flex items-center space-x-2">
+              <img src="../img/icons/it-support-icon.png" alt="" />
+              <p class="font-bold">Managed Office IT Essentials</p>
+            </div>
+            <p class="max-w-sm text-sm">
+              Robust cloud architecture that derives the perfect balance of
+              speed and reliability
+            </p>
+            <div class="flex space-x-4">
+              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
+                Learn More
+              </p>
+              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="my-32 mx-10">
+        <div
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-10 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
+        >
+          Storage
+        </div>
+        <div class="flex space-x-8 lg:mx-10 text-[#4d4d4d]">
+          <div
+            class="flex flex-col space-y-4 lg:space-y-6 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/file-storage-icon.png" alt="" />
+              <p class="font-bold text-sm lg:text-base">File Storage</p>
+            </div>
+            <p class="max-w-sm text-sm">
+              Secured and controled hosting environment with redundant power and
+              internet connection, technical support, and on-site maintanance
+            </p>
+            <div class="flex space-x-4">
+              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
+                Learn More
+              </p>
+              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col space-y-4 p-2 lg:p-6 border-b-2 border-black"
+          >
+            <div class="flex items-center space-x-4 lg:space-x-2">
+              <img src="../img/icons/s3-cloud-icon.png" alt="" />
+              <p class="font-bold text-sm lg:text-base">S3 Cloud</p>
+            </div>
+            <p class="max-w-sm text-sm">
+              Lightning-fast performance featuring powerful processors and
+              dedicated resources for unmatched speed and reliability
+            </p>
+            <div class="flex space-x-4">
+              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
+                Learn More
+              </p>
+              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="mt-16 mb-32 mx-10">
+        <div
+          class="text-2xl font-bold border-b-4 border-[#0000cc] pl-16 text-[#4d4d4d] pb-2 lg:mx-10 lg:mr-[1024px]"
+        >
+          Collaboration
+        </div>
+        <div class="flex space-x-8 lg:mx-10 text-[#4d4d4d]">
+          <div class="flex flex-col space-y-6 p-6 border-b-2 border-black">
+            <div class="flex items-center space-x-2">
+              <img src="../img/icons/biz-email-icon.png" alt="" />
+              <p class="font-bold">Business Email</p>
+            </div>
+            <p class="max-w-sm text-sm">
+              Robust cloud architecture that derives the perfect balance of
+              speed and reliability
+            </p>
+            <div class="flex space-x-4">
+              <p class="font-bold inline-block border-b-2 border-[#CCCCCC]">
+                Learn More
+              </p>
+              <img src="../img/icons/right-arrow.png" class="w-5 h-5" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div
+        class="p-12 mb-12 lg:p-20 bg-[#4d4d4d] text-white max-w-screen mx-auto"
+      >
+        <!-- Flex-container -->
+        <div
+          class="flex flex-col-reverse justify-around lg:flex-row lg:space-y-0 lg:justify-between"
+        >
+          <!-- Content container -->
+          <div class="flex flex-col space-y-6 max-w-lg md:max-w-xl">
+            <h2 class="mt-[20px] font-bold text-3xl lg:text-4xl">
+              Partnership Program - Innovation meets Collaboration and Growth
+            </h2>
+
+            <p>
+              At AWT, we are passionate about driving innovation, fostering
+              collaboration, and accelarating growth. Our Partnership Program
+              embodies these values and provides enterpreneurs, small business
+              owners, and seasoned professionals with the tools, resources, and
+              experties to achieve their goals. By joining our community of
+              like-minded individuals, you'll gain access to the latest cloud
+              solutions, receive personalized support from our team of experts,
+              and take your business to the next level. Partner with AWT today
+              and unlock unparalled opportunities for success!
+            </p>
+
+            <a
+              href="#"
+              class="flex justify-center items-center py-3 px-5 w-[220px] h-[44px] border-2 border-white rounded-md hover:text-[#0000cc] hover:bg-gray-300 hover:border-black duration-150"
+              >Be A Partner</a
+            >
+          </div>
+          <div>
+            <img src="../img/new/partnership-image.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Description  -->
+    <section>
+      <div class="max-w-screen mx-auto mt-12 mb-12">
+        <div
+          class="flex flex-col-reverse p-4 items-center justify-center lg:flex-row lg:space-y-0 lg:space-x-12"
+        >
+          <!-- image -->
+          <div class="m-6">
+            <img src="../img/illustration.png" alt="" />
+          </div>
+
+          <!-- Content -->
+          <div
+            class="flex flex-col items-center justify-center mb-5 max-w-lg space-y-6 text-[#4d4d4d] lg:space-y-8 lg:items-start"
+          >
+            <h3 class="text-2xl font-bold md:text-4xl">
+              Why AccessWorld Tech?
+            </h3>
+            <p class="font-semibold text-base">
+              We want you to experience the convenience of locally sourced cloud
+              services with customizable plans, a data center in Nepal, and
+              exclusive support, all without the need for international payment
+              methods.
+            </p>
+            <a
+              href="#"
+              class="flex items-center justify-center text-black border-2 border-black py-3 px-5 w-[220px] h-[44px] rounded-md hover:text-white hover:bg-[#0000cc] duration-150"
+              >Contact US</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="max-w-screen bg-[#292929] text-white p-6 lg:p-20 lg:pb-4 md:h-[400px]"
+      >
+        <!-- Flex container -->
+        <div class="flex justify-between space-x-16">
+          <!-- Logo and social -->
+          <div class="flex flex-col space-y-2 md:space-y-16">
+            <!-- logo -->
+            <div class="max-w-sm">
+              <img src="../img/awt-acronym-logo.png" alt="" />
+            </div>
+            <!-- social flex -->
+            <div class="flex max-w-sm space-x-2">
+              <img src="../img/icons/icon-medium.png" alt="" />
+              <img src="../img/icons/icon-facebook-square.png" alt="" />
+              <img src="../img/icons/icon-instagram.png" alt="" />
+              <img src="../img/icons/icon-linkedin.png" alt="" />
+            </div>
+          </div>
+
+          <!-- About,services,solutions etc. -->
+          <div class="flex space-x-6">
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="text-white font-medium">About</a>
+              <a href="#" class="text-white font-medium">Services</a>
+              <a href="#" class="text-white font-medium">Solutions</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="font-medium">Privacy Policy</a>
+              <a href="#" class="font-medium">Terms & Conditions</a>
+              <a href="#" class="font-medium">Sitemap</a>
+            </div>
+            <div class="hidden md:flex md:flex-col md:space-y-6">
+              <a
+                href="#"
+                class="flex justify-center items-center w-[260px] h-[44px] py-3 px-5 border-2 border-white rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+                >Login</a
+              >
+              <div
+                class="flex items-center border-2 justify-between w-[398px] h-[44px] bg-white rounded-xl active:border-green-500"
+              >
+                <input
+                  type="text"
+                  class="border-none placeholder:text-gray-400 pl-2 focus:outline-none text-black"
+                  placeholder="Enter your search"
+                />
+                <button>
+                  <img src="../img/icons/search.png" class="w-5 h-5" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Flex-container  -->
+        <div
+          class="mt-6 flex flex-col justify-center space-y-2 md:justify-start md:flex-row md:space-y-0 md:space-x-16 lg:mt-16"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; Copyright 2012-2023| AccessWorld Tech P.(L)
+          </p>
+          <p class="text-xs md:text-sm">
+            Patan Dhoka, 5F BhatBhateni Super Market, Krishna Galli, Lalitpur,
+            Nepal
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

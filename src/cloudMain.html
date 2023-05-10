@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Cloud Server Main</title>
+  </head>
+  <body>
+    <header id="navbar" class="sticky top-0 border-b shadow-sm bg-white z-30">
+      <nav class="relative">
+        <!-- Flex Container -->
+        <div
+          class="flex justify-between px-4 h-[110px] items-center lg:justify-around md:h-[140px] lg:mx-4 xl:max-w-[1920px] xl:mx-auto"
+        >
+          <!-- Logo -->
+          <div class="items-left">
+            <img
+              src="https://www.accessworld.net/img/logos/primary-gradient-horizontal-lockup.png"
+              alt="awt-logo"
+              class="w-32 md:w-[248px] md:h-87"
+            />
+          </div>
+          <!-- Menu -->
+          <div class="hidden lg:inline">
+            <!-- first dropdown menu -->
+            <div class="group flex space-x-4 text-sm">
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Services</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Solutions</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">About</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+
+          <!-- Flex-container -->
+          <div class="hidden lg:inline-flex space-x-4">
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#0000cc] w-[220px] h-[44px] px-[60px] py-[10px] border-[2px] border-[#0000cc] rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#4D4D4D] w-[220px] h-[44px] px-20 py-[10px] border-[2px] border-[#4D4D4D] rounded-md hover:border-black hover:text-[#0000cc] hover:scale-95 duration-150"
+              >Login</a
+            >
+          </div>
+
+          <!-- Right search and social -->
+          <div class="">
+            <!-- Flex-container -->
+            <div class="flex space-x-4 md:space-x-12">
+              <!-- Search -->
+              <div class="hidden lg:inline-flex space-x-6 md:mt-4">
+                <img src="../img/icons/search.png" class="w-8 h-8" alt="" />
+                <img
+                  src="../img/icons/shopping-cart.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+
+              <!-- flex-col container -->
+              <div class="group flex flex-col">
+                <!-- Dropdown -->
+                <div
+                  class="hidden w-[122px] h-[40px] border-2 border-black rounded-md text-center items-center justify-center lg:flex lg:space-x-8 group-hover:cursor-pointer"
+                >
+                  <select
+                    name=""
+                    id="currency"
+                    class="space-x-8 group-hover:cursor-pointer focus:outline-none px-2 appearance-none"
+                  >
+                    <option value="currency">NPR</option>
+                    <option value="currency">INR</option>
+                    <option value="currency">USD</option>
+                  </select>
+                  <div class="">
+                    <img src="../img/icons/Polygon 5.png" alt="" />
+                  </div>
+                </div>
+
+                <!-- social -->
+                <div
+                  class="absolute top-0 right-4 mt-3 flex space-x-3 items-center lg:relative lg:ml-4"
+                >
+                  <!-- Medium -->
+                  <a href="#">
+                    <img src="../img/icons/medium.png" class="w-5 h-5" alt="" />
+                  </a>
+                  <!-- Facebook -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/facebook.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- instagram -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/instagram.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- Linkedin -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/linkedin.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hamburger Icon -->
+
+            <button
+              id="menu-btn"
+              class="block mt-10 hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-[#f4f8f9] sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <!-- <div class="w-full hover:bg-gray-500 hover:bg-opacity-40"><a href="#">Services</a></div> -->
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Solutions</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section class="relative bg-gradient-to-r from-[#0000cc] to-[#00EEFF]">
+      <div class="lg:max-w-[1920px] lg:h-[450px]">
+        <div class="flex flex-col space-y-10 lg:items-left lg:ml-[140px]">
+          <h2
+            class="text-3xl font-bold text-white ml-5 mt-10 lg:mt-[68px] lg:text-5xl lg:mb-[60px] md:mb-[45px]"
+          >
+            Flexible and scalable cloud server <br />
+            for your changing business needs
+          </h2>
+          <div class="lg:ml-6 p-4">
+            <a
+              href="#"
+              class="font-bold text-white w-[220px] h-[44px] px-[64px] py-[11px] border-[1.5px] border-[#fff] rounded-md hover:bg-slate-400 duration-150"
+              >Learn More</a
+            >
+          </div>
+        </div>
+        <div
+          class="hidden absolute bottom-0 left-0 right-0 bg-[#e5e5e5] lg:block"
+        >
+          <div class="flex justify-around text-[#4d4d4d] font-bold text-lg">
+            <a href="#" class="py-4 px-32 bg-[#4d4d4d] text-white">Overview</a>
+            <a href="#" class="p-4">Why AWT?</a>
+            <a href="#" class="p-4">Benefits</a>
+            <a href="#" class="p-4">Plans & Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-8 lg:m-24">
+        <div
+          class="flex flex-col-reverse space-y-6 lg:flex-row lg:space-y-0 lg:justify-between"
+        >
+          <div class="flex flex-col space-y-6 text-[#4d4d4d]">
+            <h2 class="pt-6 font-bold text-3xl text-[#4d4d4d] lg:p-0">
+              Cloud Server
+            </h2>
+            <p class="max-w-xl text-[20px]">
+              Are you a business in need of accommodating a large number of
+              users or in a need to control the sudden spikes in traffic? Cloud
+              Server is exactly what you need right now and for the future
+            </p>
+            <button
+              class="py-3 px-6 font-bold text-[#0000cc] w-[200px] border-2 border-[#0000cc] rounded-lg duration-200 hover:bg-gray-200 transition"
+            >
+              Browse plans
+            </button>
+          </div>
+          <div>
+            <img
+              src="../img/new/cloud server.webp"
+              class="w-[612px] h-[300px] rounded-lg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-10 lg:m-20">
+        <h3
+          class="text-3xl text-[#4d4d4d] font-bold inline-block border-b-2 border-[#4d4d4d]"
+        >
+          Why AWT?
+        </h3>
+
+        <div class="my-10 flex space-x-4">
+          <div
+            class="flex items-center justify-center text-[#4d4d4d] bg-[#e5e5e5] w-[398px] h-[240px] p-4 lg:px-6 rounded-xl"
+          >
+            <div
+              class="flex lg:p-12 flex-col items-center justify-center space-y-6"
+            >
+              <img
+                src="../img/icons/scale-up-icon@2x.png"
+                class="w-20"
+                alt=""
+              />
+
+              <div class="flex justify-center items-center max-w-sm">
+                <p class="text-sm text-center font-bold">
+                  Design and implement a cloud-based solution for a scalable
+                  load
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center text-[#4d4d4d] bg-[#e5e5e5] w-[398px] h-[240px] py-3 px-6 rounded-xl"
+          >
+            <div
+              class="flex lg:p-12 flex-col items-center justify-center space-y-6"
+            >
+              <img src="../img/icons/support-icon@2x.png" class="w-20" alt="" />
+
+              <div class="flex justify-center items-center max-w-lg">
+                <p class="text-sm text-center font-bold">
+                  Consistent monitoring and 24/7 support
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center text-[#4d4d4d] bg-[#e5e5e5] w-[398px] h-[240px] py-3 px-6 rounded-xl"
+          >
+            <div
+              class="flex lg:p-12 flex-col items-center justify-center space-y-6"
+            >
+              <img src="../img/icons/team-icon@2x.png" class="w-20" alt="" />
+
+              <div class="flex justify-center items-center max-w-lg">
+                <p class="text-sm font-bold">A team of dedicated experts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-4xl text-[#0000cc] font-bold max-w-xl">
+          Robust cloud architecture that delivers the perfect balance of speed
+          and reliability
+        </p>
+
+        <div class="mt-8">
+          <div class="grid grid-cols-2 gap-6 lg:grid-cols-4">
+            <div class="bg-[#e5e5e5] p-6 text-[#4d4d4d] rounded-xl">
+              <div class="flex flex-col text-center space-y-6">
+                <p class="text-lg font-bold">Upgraded performance</p>
+                <p>
+                  With our cloud server you can access a larger pool of
+                  resources and can be easily scaled to meet the demands of
+                  applications and services
+                </p>
+              </div>
+            </div>
+            <div class="bg-[#e5e5e5] p-6 text-[#4d4d4d] rounded-xl">
+              <div class="flex flex-col text-center space-y-6">
+                <p class="text-lg font-bold">Authority</p>
+                <p>
+                  AWT's cloud server offers the benefits of increased authority
+                  and control over the hosting environment, allowing for custom
+                  configurations and increased security measures
+                </p>
+              </div>
+            </div>
+            <div class="bg-[#e5e5e5] p-6 text-[#4d4d4d] rounded-xl">
+              <div class="flex flex-col text-center space-y-6">
+                <p class="text-lg font-bold">Security</p>
+                <p>
+                  Our cloud server provides robust security with remote access
+                  to services
+                </p>
+              </div>
+            </div>
+            <div class="bg-[#e5e5e5] p-6 text-[#4d4d4d] rounded-xl">
+              <div class="flex flex-col text-center space-y-6">
+                <p class="text-lg font-bold">Cost-effective</p>
+                <p>
+                  For a cloud server, you only pay for the resources you use and
+                  do not need to purchase and maintain the physical hardware
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-10 lg:m-20">
+        <h4
+          class="font-bold text-2xl text-[#4d4d4d] inline-block border-b-2 border-[#4d4d4d]"
+        >
+          Plans and Pricing
+        </h4>
+
+        <p class="my-10 max-w-xl text-lg">
+          Are you a business in need of accommodating a large number of users or
+          in a need to control the sudden spikes in traffic? Cloud Server is
+          exactly what you need right now and for the future
+        </p>
+
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-4">
+          <div class="bg-[#e5e5e5] rounded-xl py-6">
+            <h4 class="uppercase text-2xl text-center font-bold text-[#4d4d4d]">
+              small
+            </h4>
+            <hr class="h-1 bg-[#CCC]" />
+            <div class="p-6">
+              <p class="text-center">
+                Suitable for SMEs, freekancers and individuals
+              </p>
+              <div class="mt-10">
+                <div class="flex flex-col space-y-6 p-4">
+                  <div class="flex items-center space-x-16">
+                    <div>
+                      <img src="../img/icons/Icon feather-cpu.png" alt="" />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                      <p class="text-[#4d4d4d]">VCPU</p>
+                      <p class="font-bold text-sm">1 CORE</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center space-x-16">
+                    <div>
+                      <img
+                        src="../img/icons/Icon feather-hard-drive.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                      <p class="text-[#4d4d4d]">Storage</p>
+                      <p class="font-bold text-sm">40 Gigabyte</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center space-x-12">
+                    <div>
+                      <img
+                        src="../img/icons/Icon awesome-memory.png"
+                        class=""
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                      <p class="text-[#4d4d4d]">RAM</p>
+                      <p class="font-bold text-sm">02 Gigabyte</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center space-x-16">
+                    <div>
+                      <img
+                        src="../img/icons/Icon material-web-asset.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                      <p class="text-[#4d4d4d]">Traffic</p>
+                      <p class="font-bold text-sm">300 Gigabyte/month</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

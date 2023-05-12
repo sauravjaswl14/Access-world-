@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Career Page Apply</title>
+  </head>
+  <body>
+    <header id="navbar" class="sticky top-0 border-b shadow-sm bg-white z-30">
+      <nav class="relative">
+        <!-- Flex Container -->
+        <div
+          class="flex justify-between px-4 h-[110px] items-center lg:justify-around md:h-[140px] lg:mx-4 xl:max-w-[1920px] xl:mx-auto"
+        >
+          <!-- Logo -->
+          <div class="items-left">
+            <img
+              src="https://www.accessworld.net/img/logos/primary-gradient-horizontal-lockup.png"
+              alt="awt-logo"
+              class="w-32 md:w-[248px] md:h-87"
+            />
+          </div>
+          <!-- Menu -->
+          <div class="hidden lg:inline">
+            <!-- first dropdown menu -->
+            <div class="group flex space-x-4 text-sm">
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Services</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Solutions</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">About</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+
+          <!-- Flex-container -->
+          <div class="hidden lg:inline-flex space-x-4">
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#0000cc] w-[220px] h-[44px] px-[60px] py-[10px] border-[2px] border-[#0000cc] rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#4D4D4D] w-[220px] h-[44px] px-20 py-[10px] border-[2px] border-[#4D4D4D] rounded-md hover:border-black hover:text-[#0000cc] hover:scale-95 duration-150"
+              >Login</a
+            >
+          </div>
+
+          <!-- Right search and social -->
+          <div class="">
+            <!-- Flex-container -->
+            <div class="flex space-x-4 md:space-x-12">
+              <!-- Search -->
+              <div class="hidden lg:inline-flex space-x-6 md:mt-4">
+                <img src="../img/icons/search.png" class="w-8 h-8" alt="" />
+                <img
+                  src="../img/icons/shopping-cart.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+
+              <!-- flex-col container -->
+              <div class="group flex flex-col">
+                <!-- Dropdown -->
+                <div
+                  class="hidden w-[122px] h-[40px] border-2 border-black rounded-md text-center items-center justify-center lg:flex lg:space-x-8 group-hover:cursor-pointer"
+                >
+                  <select
+                    name=""
+                    id="currency"
+                    class="space-x-8 group-hover:cursor-pointer focus:outline-none px-2 appearance-none"
+                  >
+                    <option value="currency">NPR</option>
+                    <option value="currency">INR</option>
+                    <option value="currency">USD</option>
+                  </select>
+                  <div class="">
+                    <img src="../img/icons/Polygon 5.png" alt="" />
+                  </div>
+                </div>
+
+                <!-- social -->
+                <div
+                  class="absolute top-0 right-4 mt-3 flex space-x-3 items-center lg:relative lg:ml-4"
+                >
+                  <!-- Medium -->
+                  <a href="#">
+                    <img src="../img/icons/medium.png" class="w-5 h-5" alt="" />
+                  </a>
+                  <!-- Facebook -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/facebook.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- instagram -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/instagram.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- Linkedin -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/linkedin.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hamburger Icon -->
+
+            <button
+              id="menu-btn"
+              class="block mt-10 hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-[#f4f8f9] sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <!-- <div class="w-full hover:bg-gray-500 hover:bg-opacity-40"><a href="#">Services</a></div> -->
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Solutions</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section class="bg-[#0000cc]">
+      <div class="lg:max-w-[1920px] lg:h-[450px]">
+        <div class="flex flex-col space-y-10 lg:items-left lg:ml-[140px]">
+          <h2
+            class="text-3xl font-bold text-white ml-5 m-10 lg:mt-[68px] lg:text-5xl lg:mb-[60px] md:mb-[45px]"
+          >
+            Be a part of the cloud revolution
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-10 lg:m-20">
+        <h2 class="text-[#4d4d4d] text-3xl font-bold mb-6">Graphic Designer</h2>
+        <div class="flex flex-col space-y-6">
+          <div class="flex items-center space-x-4">
+            <img src="../img/icons/pin-icon.png" alt="" />
+            <p>Kathmandu</p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <img src="../img/icons/person-icon.png" alt="" />
+            <p>11 Nos.</p>
+          </div>
+          <div class="flex flex-col space-y-6">
+            <p class="max-w-4xl">
+              We are looking for a creative and driven Junior Fraphic Designer
+              to join our team. The ideal candidate should be able to produce
+              visually stunning designs that effectively communicate our message
+              to our target audience
+            </p>
+            <p class="text-xl font-bold">Responsibilities:</p>
+            <div>
+              <p>
+                Work collaboratively with our design team to develop creative
+                concepts and execute them into high-quality designs. Design
+                marketing materials such as social media graphics, email
+                newsletters, brochures, flyers, and posters.
+              </p>
+              <p>Develop creative concepts and layouts for website design.</p>
+              <p>
+                Work closely with the marketing team to ensure that all
+                materials are on-brand
+              </p>
+              <p>
+                Take feedbacks from senior desifners and incorporate it into
+                your work to improve your designs.
+              </p>
+              <p>
+                Stay up-to-date with industry trends and incorporate them into
+                your designs.
+              </p>
+              <p>Maintain and organize design files and assets.</p>
+            </div>
+            <p class="text-xl font-bold">Requirements:</p>
+            <div>
+              <p>
+                Bachelor degree in graphic design, visual communication, or a
+                related field.
+              </p>
+              <p>
+                Strong knowledge of Adobe Creative Suite, particularly
+                photoshop, Illustrator, and InDesign.
+              </p>
+              <p>Strong portfolio showcasing design skills.</p>
+              <p>Ability to work on multiple projects simultaneously.</p>
+              <p>Strong attention to detail.</p>
+              <p>Excellent communication skills.</p>
+              <p>Ability to work collaboratively with a team.</p>
+            </div>
+            <div>
+              <p>
+                We offer a competitive salary and benefits package and a
+                collaborative and creative work environment. If you are a driven
+                and creative individual who is looking to develop your design
+                skills in a fast-paced and dynamic workplace, please apply with
+                your resume and portfolio.
+              </p>
+            </div>
+            <div class="flex space-x-6">
+              <button
+                class="font-bold py-2 px-8 text-[#0000cc] border-2 border-[#0000cc] rounded-lg duration-200 hover:bg-[#0000cc] hover:text-white transition ease-in-out"
+              >
+                Apply for job
+              </button>
+              <button
+                class="font-bold py-2 px-8 text-[#4d4d4d] border-2 border-[#4d4d4d] rounded-lg duration-200 hover:bg-[#0000cc] hover:text-white transition ease-in-out"
+              >
+                View on Linkedin
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="m-20">
+      <form class="">
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col space-y-4">
+            <label for="fullname" class="font-bold">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <label for="address" class="font-bold">Address</label>
+            <input
+              type="text"
+              id="address"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <label for="email" class="font-bold">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <label for="contactno" class="font-bold">Contact Number</label>
+            <input
+              type="number"
+              id="contactno"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col space-y-4">
+            <label for="position" class="font-bold">Current Position</label>
+            <input
+              type="text"
+              id="position"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <label for="salary" class="font-bold">Current Salary</label>
+            <input
+              type="text"
+              id="salary"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <label for="company" class="font-bold">Current Company</label>
+            <input
+              type="text"
+              id="company"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <label for="salary" class="font-bold">Expected Salary</label>
+            <input
+              type="text"
+              id="salary"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <label for="notice" class="font-bold">Notice Period</label>
+            <input
+              type="text"
+              id="notice"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col space-y-4">
+            <label for="resume" class="font-bold">Upload CV/Resume</label>
+            <input
+              type="text"
+              id="resume"
+              class="py-3 px-10 border-2 border-[#6D6E71] rounded-lg"
+            />
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="mt-8 py-2 px-16 border-2 border-[#0000cc] text-[#0000cc] font-bold rounded-lg duration-200 hover:bg-slate-300 hover:text-[#4d4d4d] transition ease-in-out"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <section>
+      <div class="bg-[#e5e5e5] p-8 lg:p-10">
+        <div
+          class="flex flex-col-reverse space-y-12 lg:space-y-0 lg:flex-row lg:space-x-20 lg:justify-between"
+        >
+          <div class="flex flex-col space-y-6">
+            <h3 class="mt-[30px] font-bold text-3xl text-[#0000cc] max-w-xl">
+              Join the AWT Community and get exclusive access to updates
+            </h3>
+            <div class="flex flex-col space-y-4">
+              <p class="max-w-3xl">
+                Are you ready to soar to new heights in the cloud computing
+                world? Join our community today! As a member, you'll have access
+                to exclusive content, expert advice, and a network of
+                like-minded individuals who share your passion for innovation
+                and technology. Whether you're a seasoned pro or just getting
+                started, our community is the perfect place to learn, grow, and
+                connect with the best and brightest in the industry.
+              </p>
+              <p class="max-w-4xl">
+                So why wait? Join us today and let's make the future of cloud
+                computing together!
+              </p>
+            </div>
+
+            <button
+              class="w-[250px] font-bold py-3 px-6 text-[#0000cc] border-2 border-[#0000cc] rounded-lg duration-200 hover:bg-gray-500 hover:text-white hover:border-black transition ease-in-out"
+            >
+              Join the Community
+            </button>
+          </div>
+
+          <div class="mb-8 lg:w-[674px]">
+            <img
+              src="../img/new/partnership-image@2x.png"
+              class="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div
+        class="max-w-screen bg-[#292929] text-white p-6 lg:p-20 lg:pb-4 md:h-[400px]"
+      >
+        <!-- Flex container -->
+        <div class="flex justify-between space-x-16">
+          <!-- Logo and social -->
+          <div class="flex flex-col space-y-2 md:space-y-16">
+            <!-- logo -->
+            <div class="max-w-sm">
+              <img src="../img/awt-acronym-logo.png" alt="" />
+            </div>
+            <!-- social flex -->
+            <div class="flex max-w-sm space-x-2">
+              <img src="../img/icons/icon-medium.png" alt="" />
+              <img src="../img/icons/icon-facebook-square.png" alt="" />
+              <img src="../img/icons/icon-instagram.png" alt="" />
+              <img src="../img/icons/icon-linkedin.png" alt="" />
+            </div>
+          </div>
+
+          <!-- About,services,solutions etc. -->
+          <div class="flex space-x-6">
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="text-white font-medium">About</a>
+              <a href="#" class="text-white font-medium">Services</a>
+              <a href="#" class="text-white font-medium">Solutions</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="font-medium">Privacy Policy</a>
+              <a href="#" class="font-medium">Terms & Conditions</a>
+              <a href="#" class="font-medium">Sitemap</a>
+            </div>
+            <div class="hidden md:flex md:flex-col md:space-y-6">
+              <a
+                href="#"
+                class="flex justify-center items-center w-[260px] h-[44px] py-3 px-5 border-2 border-white rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+                >Login</a
+              >
+              <div
+                class="flex items-center border-2 justify-between w-[398px] h-[44px] bg-white rounded-xl active:border-green-500"
+              >
+                <input
+                  type="text"
+                  class="border-none placeholder:text-gray-400 pl-2 focus:outline-none text-black"
+                  placeholder="Enter your search"
+                />
+                <button>
+                  <img src="../img/icons/search.png" class="w-5 h-5" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Flex-container  -->
+        <div
+          class="mt-6 flex flex-col justify-center space-y-2 md:justify-start md:flex-row md:space-y-0 md:space-x-16 lg:mt-16"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; Copyright 2012-2023| AccessWorld Tech P.(L)
+          </p>
+          <p class="text-xs md:text-sm">
+            Patan Dhoka, 5F BhatBhateni Super Market, Krishna Galli, Lalitpur,
+            Nepal
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

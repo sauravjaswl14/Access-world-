@@ -13,7 +13,7 @@ module.exports = {
         grayishBlue: "hsl(201, 11%, 66%)",
       },
       fontFamily: {
-        sans: ["Lato", "sans-serif"],
+        sans: ["Lato"],
       },
     },
   },

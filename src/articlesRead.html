@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Articles Read Page</title>
+  </head>
+  <body>
+    <header id="navbar" class="sticky top-0 border-b shadow-sm bg-white z-30">
+      <nav class="relative">
+        <!-- Flex Container -->
+        <div
+          class="flex justify-between px-4 h-[110px] items-center lg:justify-around md:h-[140px] lg:mx-4 xl:max-w-[1920px] xl:mx-auto"
+        >
+          <!-- Logo -->
+          <div class="items-left">
+            <img
+              src="https://www.accessworld.net/img/logos/primary-gradient-horizontal-lockup.png"
+              alt="awt-logo"
+              class="w-32 md:w-[248px] md:h-87"
+            />
+          </div>
+          <!-- Menu -->
+          <div class="hidden lg:inline">
+            <!-- first dropdown menu -->
+            <div class="group flex space-x-4 text-sm">
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Services</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Solutions</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">About</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+
+          <!-- Flex-container -->
+          <div class="hidden lg:inline-flex space-x-4">
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#0000cc] w-[220px] h-[44px] px-[60px] py-[10px] border-[2px] border-[#0000cc] rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#4D4D4D] w-[220px] h-[44px] px-20 py-[10px] border-[2px] border-[#4D4D4D] rounded-md hover:border-black hover:text-[#0000cc] hover:scale-95 duration-150"
+              >Login</a
+            >
+          </div>
+
+          <!-- Right search and social -->
+          <div class="">
+            <!-- Flex-container -->
+            <div class="flex space-x-4 md:space-x-12">
+              <!-- Search -->
+              <div class="hidden lg:inline-flex space-x-6 md:mt-4">
+                <img src="../img/icons/search.png" class="w-8 h-8" alt="" />
+                <img
+                  src="../img/icons/shopping-cart.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+
+              <!-- flex-col container -->
+              <div class="group flex flex-col">
+                <!-- Dropdown -->
+                <div
+                  class="hidden w-[122px] h-[40px] border-2 border-black rounded-md text-center items-center justify-center lg:flex lg:space-x-8 group-hover:cursor-pointer"
+                >
+                  <select
+                    name=""
+                    id="currency"
+                    class="space-x-8 group-hover:cursor-pointer focus:outline-none px-2 appearance-none"
+                  >
+                    <option value="currency">NPR</option>
+                    <option value="currency">INR</option>
+                    <option value="currency">USD</option>
+                  </select>
+                  <div class="">
+                    <img src="../img/icons/Polygon 5.png" alt="" />
+                  </div>
+                </div>
+
+                <!-- social -->
+                <div
+                  class="absolute top-0 right-4 mt-3 flex space-x-3 items-center lg:relative lg:ml-4"
+                >
+                  <!-- Medium -->
+                  <a href="#">
+                    <img src="../img/icons/medium.png" class="w-5 h-5" alt="" />
+                  </a>
+                  <!-- Facebook -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/facebook.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- instagram -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/instagram.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- Linkedin -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/linkedin.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hamburger Icon -->
+
+            <button
+              id="menu-btn"
+              class="block mt-10 hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-[#f4f8f9] sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <!-- <div class="w-full hover:bg-gray-500 hover:bg-opacity-40"><a href="#">Services</a></div> -->
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Solutions</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section class="relative bg-gradient-to-r from-[#0000cc] to-[#00EEFF]">
+      <div class="lg:max-w-[1920px] lg:h-[450px]">
+        <div class="flex flex-col space-y-10 lg:items-left lg:ml-[60px]">
+          <h2
+            class="max-w-3xl leading-loose text-3xl font-extrabold text-white ml-5 mt-10 lg:mt-[68px] lg:text-5xl lg:mb-[60px] md:mb-[45px]"
+          >
+            Dive in and expand your horizons today with our articles
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="mt-10 mx-20">
+        <h2 class="mb-8 text-4xl font-extrabold text-[#0000cc] max-w-lg">
+          Changing landscape of cloud computing businesses in Nepal
+        </h2>
+
+        <div class="border-b-4 border-[#4d4d4d] p-8">
+          <div class="flex items-center space-x-12 lg:space-x-52">
+            <div class="flex items-center space-x-4">
+              <img src="../img/writer-icon.png" alt="" />
+
+              <p class="text-[#4d4d4d]">Oliver John Doe</p>
+            </div>
+            <div class="flex space-x-2">
+              <img src="../img/icons/share.png" class="w-5 h-5" alt="" />
+              <img
+                src="../img/icons/icon-facebook-square.png"
+                class="w-5 h-5"
+                alt=""
+              />
+              <img
+                src="../img/icons/icon-instagram@2x.png"
+                class="w-5 h-5"
+                alt=""
+              />
+              <img
+                src="../img/icons/icon-linkedin@2x.png"
+                class="w-5 h-5"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <p class="text-[#4d4d4d] text-lg my-6 max-w-4xl">
+          Cloud computing has revolutionized the global technology landscape,
+          reshaping the way businesses operate and transforming IT
+          infrastructures. Nepal, amidst its rapid digital growth, is witnessing
+          a notable shift towards cloud computing solutions. As organizations in
+          the country increasingly recognize the advantages of cloud services,
+          the market is experiencing a surge in demand, opening up new
+          opportunities for companies in this domain.
+        </p>
+
+        <h4 class="font-extrabold text-xl text-[#4d4d4d]">
+          Evolving Adoption of Cloud Services
+        </h4>
+
+        <p class="text-[#4d4d4d] text-lg my-6 max-w-4xl">
+          Nepal has witnessed a significant increase in the adoption of cloud
+          services across various industries in recent years. Businesses,
+          ranging from startups to SMEs and large enterprises, are embracing
+          cloud computing to streamline operations, enhance scalability, improve
+          data security, and reduce infrastructure costs. The flexibility and
+          accessibility offered by cloud-based solutions have become driving
+          factors for organizations seeking to embark on their digital
+          transformation journey.
+        </p>
+
+        <h4 class="font-extrabold text-xl text-[#4d4d4d]">
+          Government Support and Initiatives:
+        </h4>
+
+        <p class="text-[#4d4d4d] text-lg my-6 max-w-4xl">
+          The government of Nepal acknowledges the potential of cloud computing
+          and has taken several initiatives to foster its growth in the country.
+          Through the formulation of policies and regulations and investment in
+          digital infrastructure, a favorable environment has been created for
+          businesses to adopt cloud solutions. Initiatives like the Digital
+          Nepal Framework and the National Information Technology Policy have
+          further accelerated the adoption of cloud computing by promoting
+          digitalization and e-governance.
+        </p>
+
+        <h4 class="font-extrabold text-xl text-[#4d4d4d]">
+          Flourishing Startup Ecosystem:
+        </h4>
+
+        <p class="text-[#4d4d4d] text-lg my-6 max-w-4xl">
+          Nepal's thriving startup ecosystem has contributed significantly to
+          the growth of cloud computing in the country. Startups, particularly
+          in the fintech, e-commerce, and e-learning sectors, are leveraging
+          cloud technology to develop and scale innovative products and
+          services. Cloud computing provides these startups with a
+          cost-effective and scalable platform, empowering them to compete on a
+          global scale and drive entrepreneurship in Nepal.
+        </p>
+        <div class="h-[300px] mb-6">
+          <img
+            src="../img/article-image@2x.png"
+            class="w-full h-[300px] rounded-xl"
+            alt=""
+          />
+        </div>
+
+        <h4 class="font-extrabold text-xl text-[#4d4d4d]">
+          Enhanced Internet Connectivity:
+        </h4>
+
+        <p class="text-[#4d4d4d] text-lg my-6 max-w-4xl">
+          The availability of high-speed internet connectivity has played a
+          pivotal role in driving the adoption of cloud computing in Nepal. With
+          the expansion of 4G networks and the increasing penetration of
+          fiber-optic cables, businesses now have access to reliable and faster
+          internet connections, enabling them to seamlessly leverage cloud-based
+          applications and services. This improved connectivity has eliminated
+          barriers and empowered organizations to fully capitalize on the
+          benefits of cloud computing.
+        </p>
+
+        <h4 class="font-extrabold text-xl text-[#4d4d4d]">
+          Addressing Data Security Concerns:
+        </h4>
+
+        <p class="text-[#4d4d4d] text-lg my-6 max-w-4xl">
+          Data security and privacy have been critical concerns for businesses
+          considering cloud adoption. However, cloud service providers in Nepal
+          have made significant strides in addressing these concerns. Local
+          providers offer robust security measures, including encryption, access
+          controls, and regular audits, ensuring the protection of sensitive
+          data. Compliance with international standards, such as ISO 27001, has
+          further instilled confidence among organizations regarding the
+          security of their data in the cloud.
+        </p>
+
+        <h4 class="font-extrabold text-xl text-[#4d4d4d]">Conclusion:</h4>
+
+        <div class="border-b-4 border-[#4d4d4d]">
+          <p class="text-[#4d4d4d] text-lg my-6 max-w-4xl">
+            The landscape of cloud computing businesses in Nepal is undergoing a
+            significant transformation. The rising adoption of cloud services,
+            backed by government support, a flourishing startup ecosystem,
+            improved internet connectivity, and strengthened data security
+            measures, is propelling Nepal into a promising future in the cloud
+            computing domain. Organizations in Nepal should seize this
+            technological shift, embracing cloud computing to gain a competitive
+            edge, foster innovation, and accelerate their digital transformation
+            journey. By leveraging cloud solutions, businesses in Nepal can
+            position themselves at the forefront of the digital era and unlock
+            new opportunities for growth and success.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-10 mb-20">
+        <h5 class="pl-24 font-extrabold text-2xl text-[#4d4d4d]">
+          Previous Articles
+        </h5>
+
+        <div class="my-6 flex items-center space-x-4">
+          <img
+            src="../img/icons/scroll-side-button.png"
+            class="w-8 h-8 rotate-180"
+            alt=""
+          />
+          <div
+            class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4"
+          >
+            <div class="flex flex-col">
+              <img src="../img/article-image-3.png" alt="" />
+              <div class="bg-[#e5e5e5] py-3 px-4">
+                <div class="flex justify-between">
+                  <div class="flex items-center space-x-6">
+                    <a
+                      href="#"
+                      class="text-[#4d4d4d] border-b-2 border-[#4d4d4d]"
+                      >Learn More</a
+                    >
+                    <img
+                      src="../img/icons/right-arrow.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex items-center space-x-6">
+                    <img src="../img/writer-icon.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#4d4d4d]">John Doe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <img src="../img/article-image-3.png" alt="" />
+              <div class="bg-[#e5e5e5] py-3 px-4">
+                <div class="flex justify-between">
+                  <div class="flex items-center space-x-6">
+                    <a
+                      href="#"
+                      class="text-[#4d4d4d] border-b-2 border-[#4d4d4d]"
+                      >Learn More</a
+                    >
+                    <img
+                      src="../img/icons/right-arrow.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex items-center space-x-6">
+                    <img src="../img/writer-icon.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#4d4d4d]">John Doe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <img src="../img/article-image-3.png" alt="" />
+              <div class="bg-[#e5e5e5] py-3 px-4">
+                <div class="flex justify-between">
+                  <div class="flex items-center space-x-6">
+                    <a
+                      href="#"
+                      class="text-[#4d4d4d] border-b-2 border-[#4d4d4d]"
+                      >Learn More</a
+                    >
+                    <img
+                      src="../img/icons/right-arrow.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="flex items-center space-x-6">
+                    <img src="../img/writer-icon.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#4d4d4d]">John Doe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="../img/icons/scroll-side-button.png"
+            class="w-8 h-8"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="max-w-screen bg-[#292929] text-white p-6 lg:p-20 lg:pb-4 md:h-[400px]"
+      >
+        <!-- Flex container -->
+        <div class="flex space-x-28">
+          <!-- Logo and social -->
+          <div class="flex flex-col space-y-2 md:space-y-16">
+            <!-- logo -->
+            <div class="max-w-sm">
+              <img src="../img/awt-acronym-logo.svg" alt="" />
+            </div>
+            <!-- social flex -->
+            <div class="flex max-w-sm space-x-2">
+              <div>
+                <img src="../img/icons/icon-medium.png" alt="" />
+              </div>
+              <div>
+                <img src="../img/icons/facebook-icon.png" alt="" />
+              </div>
+              <div>
+                <img src="../img/icons/icon-instagram.png" alt="" />
+              </div>
+              <div>
+                <img src="../img/icons/icon-linkedin.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- About,services,solutions etc. -->
+          <div class="flex mt-14 space-x-6">
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="text-white font-medium">About</a>
+              <a href="#" class="text-white font-medium">Services</a>
+              <a href="#" class="text-white font-medium">Solutions</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="font-medium">Privacy Policy</a>
+              <a href="#" class="font-medium">Terms & Conditions</a>
+              <a href="#" class="font-medium">Sitemap</a>
+            </div>
+            <div class="hidden md:flex md:flex-col md:space-y-6">
+              <a
+                href="#"
+                class="flex justify-center items-center w-[260px] h-[44px] py-3 px-5 border-2 border-white rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+                >Login</a
+              >
+              <div
+                class="flex items-center border-2 justify-between w-[398px] h-[44px] bg-white rounded-xl active:border-green-500"
+              >
+                <input
+                  type="text"
+                  class="border-none placeholder:text-gray-400 pl-2 focus:outline-none text-black"
+                  placeholder="Enter your search"
+                />
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="cursor-pointer pr-4 w-10 h-10 font-extrabold text-gray-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Flex-container  -->
+        <div
+          class="mt-6 flex flex-col justify-center space-y-2 md:justify-start md:flex-row md:space-y-0 md:space-x-16 lg:mt-16"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; Copyright 2012-2023| AccessWorld Tech P.(L)
+          </p>
+          <p class="text-xs md:text-sm">
+            Patan Dhoka, 5F BhatBhateni Super Market, Krishna Galli, Lalitpur,
+            Nepal
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

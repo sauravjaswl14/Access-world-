@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>BitDefender as a Service</title>
+  </head>
+  <body>
+    <header id="navbar" class="sticky top-0 border-b shadow-sm bg-white z-30">
+      <nav class="relative">
+        <!-- Flex Container -->
+        <div
+          class="flex justify-between px-4 h-[110px] items-center lg:justify-around md:h-[140px] lg:mx-4 xl:max-w-[1920px] xl:mx-auto"
+        >
+          <!-- Logo -->
+          <div class="items-left">
+            <img
+              src="https://www.accessworld.net/img/logos/primary-gradient-horizontal-lockup.png"
+              alt="awt-logo"
+              class="w-32 md:w-[248px] md:h-87"
+            />
+          </div>
+          <!-- Menu -->
+          <div class="hidden lg:inline">
+            <!-- first dropdown menu -->
+            <div class="group flex space-x-4 text-sm">
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Services</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Solutions</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">About</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+
+          <!-- Flex-container -->
+          <div class="hidden lg:inline-flex space-x-4">
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#0000cc] w-[220px] h-[44px] px-[60px] py-[10px] border-[2px] border-[#0000cc] rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#4D4D4D] w-[220px] h-[44px] px-20 py-[10px] border-[2px] border-[#4D4D4D] rounded-md hover:border-black hover:text-[#0000cc] hover:scale-95 duration-150"
+              >Login</a
+            >
+          </div>
+
+          <!-- Right search and social -->
+          <div class="">
+            <!-- Flex-container -->
+            <div class="flex space-x-4 md:space-x-12">
+              <!-- Search -->
+              <div class="hidden lg:inline-flex space-x-6 md:mt-4">
+                <img src="../img/icons/search.png" class="w-8 h-8" alt="" />
+                <img
+                  src="../img/icons/shopping-cart.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+
+              <!-- flex-col container -->
+              <div class="group flex flex-col">
+                <!-- Dropdown -->
+                <div
+                  class="hidden w-[122px] h-[40px] border-2 border-black rounded-md text-center items-center justify-center lg:flex lg:space-x-8 group-hover:cursor-pointer"
+                >
+                  <select
+                    name=""
+                    id="currency"
+                    class="space-x-8 group-hover:cursor-pointer focus:outline-none px-2 appearance-none"
+                  >
+                    <option value="currency">NPR</option>
+                    <option value="currency">INR</option>
+                    <option value="currency">USD</option>
+                  </select>
+                  <div class="">
+                    <img src="../img/icons/Polygon 5.png" alt="" />
+                  </div>
+                </div>
+
+                <!-- social -->
+                <div
+                  class="absolute top-0 right-4 mt-3 flex space-x-3 items-center lg:relative lg:ml-4"
+                >
+                  <!-- Medium -->
+                  <a href="#">
+                    <img src="../img/icons/medium.png" class="w-5 h-5" alt="" />
+                  </a>
+                  <!-- Facebook -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/facebook.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- instagram -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/instagram.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- Linkedin -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/linkedin.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hamburger Icon -->
+
+            <button
+              id="menu-btn"
+              class="block mt-10 hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-[#f4f8f9] sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <!-- <div class="w-full hover:bg-gray-500 hover:bg-opacity-40"><a href="#">Services</a></div> -->
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Solutions</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section class="relative bg-gradient-to-r from-[#0000cc] to-[#00EEFF]">
+      <div class="lg:max-w-[1920px] lg:h-[450px]">
+        <div class="flex flex-col space-y-10 lg:items-left lg:ml-[70px]">
+          <h2
+            class="text-3xl font-extrabold leading-relaxed text-white ml-5 mt-10 max-w-2xl lg:mt-[68px] lg:text-5xl lg:mb-[60px] md:mb-[45px]"
+          >
+            Advance your business with real-time protection
+          </h2>
+          <div class="p-6">
+            <a
+              href="#"
+              class="font-bold text-white w-[220px] h-[44px] px-[64px] py-[11px] border-[1.5px] border-[#fff] rounded-md hover:bg-slate-400 duration-150"
+              >Browse Plans</a
+            >
+          </div>
+        </div>
+        <div
+          class="hidden absolute bottom-0 left-0 right-0 bg-[#e5e5e5] lg:block"
+        >
+          <div class="flex justify-around text-[#4d4d4d] font-bold text-lg">
+            <a href="#" class="py-4 px-32 bg-[#4d4d4d] text-white">Overview</a>
+            <a href="#" class="p-4">Why AWT?</a>
+            <a href="#" class="p-4">Benefits</a>
+            <a href="#" class="p-4">Plans & Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-8 lg:m-24">
+        <div
+          class="flex flex-col-reverse space-y-6 lg:flex-row lg:space-y-0 lg:justify-between"
+        >
+          <div class="flex flex-col space-y-6 text-[#4d4d4d]">
+            <h2 class="pt-6 font-bold text-3xl text-[#4d4d4d] lg:p-0">
+              BitDefender as a Service
+            </h2>
+            <p class="max-w-xl text-[20px]">
+              A cloud-based solution equipped with advanced features like patch
+              management, mobile device support, antivirus protection, and
+              native device encryption to safeguard physical workstations from
+              various cyber-attacks such as data breaches, ransomware, and
+              phishing.
+            </p>
+            <button
+              class="py-3 px-6 font-extrabold text-[#0000cc] w-[200px] border-2 border-[#0000cc] rounded-lg duration-200 hover:bg-gray-200 transition"
+            >
+              Browse plans
+            </button>
+          </div>
+          <div>
+            <img
+              src="../img/bit-defender-image.png"
+              class="w-[612px] h-[300px] rounded-lg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-10 lg:m-24">
+        <h3
+          class="text-3xl text-[#4d4d4d] font-bold inline-block border-b-2 border-[#4d4d4d]"
+        >
+          Why AWT?
+        </h3>
+
+        <div class="my-16 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="flex items-center justify-center text-[#4d4d4d] bg-[#e5e5e5] h-[240px] py-3 px-6 rounded-xl"
+          >
+            <div
+              class="flex lg:p-12 flex-col items-center justify-center space-y-6"
+            >
+              <img
+                src="../img/icons/advanced-threat-protection-icon.png"
+                class="w-20"
+                alt=""
+              />
+
+              <div class="flex justify-center items-center max-w-lg">
+                <p class="text-sm text-center font-bold">
+                  Advanced threat protection
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center justify-center text-[#4d4d4d] bg-[#e5e5e5] h-[240px] py-3 px-6 rounded-xl"
+          >
+            <div
+              class="flex lg:p-12 flex-col items-center justify-center space-y-6"
+            >
+              <img
+                src="../img/icons/multi-layer-icon.png"
+                class="w-20"
+                alt=""
+              />
+
+              <div class="flex justify-center items-center max-w-lg">
+                <p class="text-sm text-center font-bold">
+                  Multi-layer security
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center text-[#4d4d4d] bg-[#e5e5e5] h-[240px] py-3 px-1 rounded-xl"
+          >
+            <div
+              class="flex lg:p-12 flex-col items-center justify-center space-y-6"
+            >
+              <img
+                src="../img/icons/cloud-infra-icon1.png"
+                class="w-20"
+                alt=""
+              />
+
+              <div class="flex justify-center items-center max-w-lg">
+                <p class="text-sm font-bold lg:whitespace-nowrap">
+                  Integration with Cloud infrastructure
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center text-[#4d4d4d] bg-[#e5e5e5] h-[240px] py-3 px-6 rounded-xl"
+          >
+            <div
+              class="flex lg:p-12 flex-col items-center justify-center space-y-6"
+            >
+              <img
+                src="../img/icons/automated-reporting-icon.png"
+                class="w-20"
+                alt=""
+              />
+
+              <div class="flex justify-center items-center max-w-lg">
+                <p class="text-sm text-center font-bold whitespace-nowrap">
+                  Automated compliance and reporting
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-4xl text-[#0000cc] font-extrabold max-w-xl">
+          Defend your IT infrastructure from the threats in cyberspace
+        </p>
+
+        <div class="mt-8">
+          <div class="grid grid-cols-2 gap-6 lg:grid-cols-3">
+            <div class="bg-[#e5e5e5] p-6 text-[#4d4d4d] rounded-xl">
+              <div class="flex flex-col text-center space-y-6">
+                <p class="text-base lg:text-lg font-extrabold">
+                  Updated security information
+                </p>
+                <p>
+                  By regularly synchronizing with the Bitdefender update server,
+                  the BitDefender as a Service server makes sure the recent
+                  security upgrades are constantly in place.
+                </p>
+              </div>
+            </div>
+            <div class="bg-[#e5e5e5] p-6 text-[#4d4d4d] rounded-xl">
+              <div class="flex flex-col text-center space-y-6">
+                <p class="text-base lg:text-lg font-extrabold">Data storing</p>
+                <p>
+                  The BitDefender as a Service database by AWT stores vital
+                  information about managed systems on your network, enabling
+                  the server to maintain system security and ensure they are
+                  up-to-date.
+                </p>
+              </div>
+            </div>
+            <div class="bg-[#e5e5e5] p-6 text-[#4d4d4d] rounded-xl">
+              <div class="flex flex-col text-center space-y-6">
+                <p class="text-base lg:text-lg font-extrabold">
+                  Agent-server secure communication (ASSC)
+                </p>
+                <p>
+                  Periodic ASSC exchanges take place between end systems and the
+                  Server to ensure consistent and secure communication.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-10 lg:m-24">
+        <h4
+          class="font-extrabold text-2xl text-[#4d4d4d] inline-block border-b-2 border-[#4d4d4d]"
+        >
+          Plans and Pricing
+        </h4>
+
+        <p class="my-10 max-w-xl text-xl">
+          A cloud-based solution equipped with advanced features like patch
+          management, mobile device support, antivirus protection, and native
+          device encryption to safeguard physical workstations from various
+          cyber-attacks such as data breaches, ransomware, and phishing.
+        </p>
+
+        <div>
+          <div class="grid gap-1 grid-cols-2 lg:grid-cols-4">
+            <!-- Plan -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-extrabold py-3 px-5 bg-[#cccccc] rounded-tl-lg"
+              >
+                Plan
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p class="text-sm text-[#4d4d4d] text-center max-w-xs">
+                  Bitdefender Gravityzone Business Security
+                </p>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center py-3 px-5 bg-[#cccccc] text-lg font-extrabold text-[#4d4d4d]"
+              >
+                Features
+              </div>
+              <div
+                class="flex justify-center items-center py-[14px] px-5 border-2"
+              >
+                <p class="text-center text-[#4d4d4d] text-sm max-w-xs">
+                  Complete data protection. Advanced threat defense, Multi-layer
+                  ransomware protection, Anti-phising, Social protection
+                </p>
+              </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-extrabold py-3 px-5 bg-[#cccccc]"
+              >
+                Pricing
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p
+                  class="text-lg font-bold text-[#4d4d4d] text-center max-w-xs"
+                >
+                  NPR 1250
+                </p>
+              </div>
+            </div>
+
+            <!-- cart -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-[26px] px-5 bg-[#cccccc] rounded-tr-lg"
+              ></div>
+              <div
+                class="py-4 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <div class="flex items-center space-x-6">
+                  <div class="flex flex-col items-center space-y-5">
+                    <img src="../img/icons/cart.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#0000cc]">Add to Cart</p>
+                  </div>
+                  <div class="flex flex-col items-center space-y-5">
+                    <img
+                      src="../img/icons/telephone.png"
+                      class="w-6 h-6"
+                      alt=""
+                    />
+                    <p class="text-[#4d4d4d]">Contact Sales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Plan
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p class="text-sm text-[#4d4d4d] text-center max-w-xs">
+                  Bitdefender Antivirus Plus<br />(Windows; 1 device; 1 Year)
+                </p>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center py-3 px-5 bg-[#cccccc] text-lg font-bold text-[#4d4d4d] lg:hidden"
+              >
+                Features
+              </div>
+              <div
+                class="flex justify-center items-center py-[14px] px-5 border-2"
+              >
+                <p class="text-center text-[#4d4d4d] text-sm max-w-xs">
+                  Complete data protection. Advanced threat defense, Multi-layer
+                  ransomware protection, Anti-phising, Social protection
+                </p>
+              </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Pricing
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p
+                  class="text-lg font-bold text-[#4d4d4d] text-center max-w-xs"
+                >
+                  NPR 500
+                </p>
+              </div>
+            </div>
+
+            <!-- cart -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-[26px] px-5 bg-[#cccccc] lg:hidden"
+              ></div>
+              <div
+                class="py-4 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <div class="flex items-center space-x-6">
+                  <div class="flex flex-col items-center space-y-5">
+                    <img src="../img/icons/cart.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#0000cc]">Add to Cart</p>
+                  </div>
+                  <div class="flex flex-col items-center space-y-5">
+                    <img
+                      src="../img/icons/telephone.png"
+                      class="w-6 h-6"
+                      alt=""
+                    />
+                    <p class="text-[#4d4d4d]">Contact Sales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Plan
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p class="text-sm text-[#4d4d4d] text-center max-w-xs">
+                  Bitdefender Internet Security<br />(Windows; 1 device; 1 Year)
+                </p>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center py-3 px-5 bg-[#cccccc] text-lg font-bold text-[#4d4d4d] lg:hidden"
+              >
+                Features
+              </div>
+              <div
+                class="flex justify-center items-center py-[14px] px-5 border-2"
+              >
+                <p class="text-center text-[#4d4d4d] text-sm max-w-xs">
+                  Complete data protection. Advanced threat defense, Multi-layer
+                  ransomware protection, Anti-phising, Social protection
+                </p>
+              </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Pricing
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p
+                  class="text-lg font-bold text-[#4d4d4d] text-center max-w-xs"
+                >
+                  NPR 600
+                </p>
+              </div>
+            </div>
+
+            <!-- cart -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-[26px] px-5 bg-[#cccccc] lg:hidden"
+              ></div>
+              <div
+                class="py-4 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <div class="flex items-center space-x-6">
+                  <div class="flex flex-col items-center space-y-5">
+                    <img src="../img/icons/cart.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#0000cc]">Add to Cart</p>
+                  </div>
+                  <div class="flex flex-col items-center space-y-5">
+                    <img
+                      src="../img/icons/telephone.png"
+                      class="w-6 h-6"
+                      alt=""
+                    />
+                    <p class="text-[#4d4d4d]">Contact Sales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Plan
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p class="text-sm text-[#4d4d4d] text-center max-w-xs">
+                  Bitdefender Total Security<br />(Mac, Windows, iOS, Android, 5
+                  devices, 1 Year single user)
+                </p>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center py-3 px-5 bg-[#cccccc] text-lg font-bold text-[#4d4d4d] lg:hidden"
+              >
+                Features
+              </div>
+              <div
+                class="flex justify-center items-center py-[14px] px-5 border-2"
+              >
+                <p class="text-center text-[#4d4d4d] text-sm max-w-xs">
+                  Complete data protection. Advanced threat defense, Multi-layer
+                  ransomware protection, Anti-phising, Social protection
+                </p>
+              </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Pricing
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p
+                  class="text-lg font-bold text-[#4d4d4d] text-center max-w-xs"
+                >
+                  NPR 2000
+                </p>
+              </div>
+            </div>
+
+            <!-- cart -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-[26px] px-5 bg-[#cccccc] lg:hidden"
+              ></div>
+              <div
+                class="py-4 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <div class="flex items-center space-x-6">
+                  <div class="flex flex-col items-center space-y-5">
+                    <img src="../img/icons/cart.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#0000cc]">Add to Cart</p>
+                  </div>
+                  <div class="flex flex-col items-center space-y-5">
+                    <img
+                      src="../img/icons/telephone.png"
+                      class="w-6 h-6"
+                      alt=""
+                    />
+                    <p class="text-[#4d4d4d]">Contact Sales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Plan
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p class="text-sm text-[#4d4d4d] text-center max-w-xs">
+                  Bitdefender Internet Security<br />(Windows,3 devices; 1 Year)
+                </p>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center py-3 px-5 bg-[#cccccc] text-lg font-bold text-[#4d4d4d] lg:hidden"
+              >
+                Features
+              </div>
+              <div
+                class="flex justify-center items-center py-[14px] px-5 border-2"
+              >
+                <p class="text-center text-[#4d4d4d] text-sm max-w-xs">
+                  Complete data protection. Advanced threat defense, Multi-layer
+                  ransomware protection, Anti-phising, Social protection
+                </p>
+              </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Pricing
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p
+                  class="text-lg font-bold text-[#4d4d4d] text-center max-w-xs"
+                >
+                  NPR 1000
+                </p>
+              </div>
+            </div>
+
+            <!-- cart -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-[26px] px-5 bg-[#cccccc] lg:hidden"
+              ></div>
+              <div
+                class="py-4 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <div class="flex items-center space-x-6">
+                  <div class="flex flex-col items-center space-y-5">
+                    <img src="../img/icons/cart.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#0000cc]">Add to Cart</p>
+                  </div>
+                  <div class="flex flex-col items-center space-y-5">
+                    <img
+                      src="../img/icons/telephone.png"
+                      class="w-6 h-6"
+                      alt=""
+                    />
+                    <p class="text-[#4d4d4d]">Contact Sales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Plan
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p class="text-sm text-[#4d4d4d] text-center max-w-xs">
+                  Bitdefender Mobile Security<br />(Android, 1 devices, 1 Year)
+                </p>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center py-3 px-5 bg-[#cccccc] text-lg font-bold text-[#4d4d4d] lg:hidden"
+              >
+                Features
+              </div>
+              <div
+                class="flex justify-center items-center py-[14px] px-5 border-2"
+              >
+                <p class="text-center text-[#4d4d4d] text-sm max-w-xs">
+                  Complete data protection. Advanced threat defense, Multi-layer
+                  ransomware protection, Anti-phising, Social protection
+                </p>
+              </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Pricing
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p
+                  class="text-lg font-bold text-[#4d4d4d] text-center max-w-xs"
+                >
+                  NPR 150
+                </p>
+              </div>
+            </div>
+
+            <!-- cart -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-[26px] px-5 bg-[#cccccc] lg:hidden"
+              ></div>
+              <div
+                class="py-4 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <div class="flex items-center space-x-6">
+                  <div class="flex flex-col items-center space-y-5">
+                    <img src="../img/icons/cart.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#0000cc]">Add to Cart</p>
+                  </div>
+                  <div class="flex flex-col items-center space-y-5">
+                    <img
+                      src="../img/icons/telephone.png"
+                      class="w-6 h-6"
+                      alt=""
+                    />
+                    <p class="text-[#4d4d4d]">Contact Sales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Plan
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p class="text-sm text-[#4d4d4d] text-center max-w-xs">
+                  Bitdefender Mobile Security<br />(Android & iOS, 3 devices, 1
+                  Year)
+                </p>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center py-3 px-5 bg-[#cccccc] text-lg font-bold text-[#4d4d4d] lg:hidden"
+              >
+                Features
+              </div>
+              <div
+                class="flex justify-center items-center py-[14px] px-5 border-2"
+              >
+                <p class="text-center text-[#4d4d4d] text-sm max-w-xs">
+                  Complete data protection. Advanced threat defense, Multi-layer
+                  ransomware protection, Anti-phising, Social protection
+                </p>
+              </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-3 px-5 bg-[#cccccc] lg:hidden"
+              >
+                Pricing
+              </div>
+              <div
+                class="py-3 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <p
+                  class="text-lg font-bold text-[#4d4d4d] text-center max-w-xs"
+                >
+                  NPR 300
+                </p>
+              </div>
+            </div>
+
+            <!-- cart -->
+            <div class="flex flex-col">
+              <div
+                class="flex justify-center items-center text-[#4d4d4d] text-lg font-bold py-[26px] px-5 bg-[#cccccc] lg:hidden"
+              ></div>
+              <div
+                class="py-4 px-5 flex justify-center items-center border-2 h-[91px]"
+              >
+                <div class="flex items-center space-x-6">
+                  <div class="flex flex-col items-center space-y-5">
+                    <img src="../img/icons/cart.png" class="w-8 h-8" alt="" />
+                    <p class="text-[#0000cc]">Add to Cart</p>
+                  </div>
+                  <div class="flex flex-col items-center space-y-5">
+                    <img
+                      src="../img/icons/telephone.png"
+                      class="w-6 h-6"
+                      alt=""
+                    />
+                    <p class="text-[#4d4d4d]">Contact Sales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-10 lg:m-24">
+        <div class="flex space-x-4">
+          <img src="../img/icons/icons8-add-64.png" class="w-8 h-8" alt="" />
+          <p
+            class="text-2xl font-extrabold text-[#0000cc] border-b-2 border-[#0000cc]"
+          >
+            Add On Services
+          </p>
+        </div>
+
+        <div
+          class="mt-12 flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4"
+        >
+          <div class="flex flex-col w-[398px]">
+            <div
+              class="bg-[#e5e5e5] flex justify-center items-center py-3 px-5 text-[#4d4d4d] text-xl font-bold border-b-2 border-[#cccccc] rounded-t-lg"
+            >
+              Business Security
+            </div>
+            <div class="flex items-center bg-[#e5e5e5] py-4 px-6 rounded-b-lg">
+              <div class="h-[341px] flex flex-col items-center justify-between">
+                <p class="text-center text-[#000000] max-w-lg">
+                  A whole range of security services are available to small and
+                  medium-sized enterprises by AWT, effortlessly fusing superior
+                  security with the simple central administration of all
+                  workstations and servers
+                </p>
+
+                <button
+                  class="text-[#4d4d4d] w-44 bg-white py-3 px-5 flex items-center justify-center border-2 border-[#4d4d4d] rounded-lg"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-[398px]">
+            <div
+              class="bg-[#e5e5e5] flex justify-center items-center py-3 px-5 text-[#4d4d4d] text-xl font-bold border-b-2 border-[#cccccc] rounded-t-lg"
+            >
+              Advance Business Security
+            </div>
+            <div class="flex items-center bg-[#e5e5e5] py-4 px-6 rounded-b-lg">
+              <div class="h-[341px] flex flex-col items-center justify-between">
+                <p class="text-center text-[#000000] max-w-lg">
+                  AWT offers comprehensive protection and centralized management
+                  for workstations, servers, email, and mobile devices, making
+                  it an all-wncompassing security solution.
+                </p>
+
+                <button
+                  class="text-[#4d4d4d] w-44 bg-white py-3 px-5 flex items-center justify-center border-2 border-[#4d4d4d] rounded-lg"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-[398px]">
+            <div
+              class="bg-[#e5e5e5] flex justify-center items-center py-3 px-5 text-[#4d4d4d] text-xl font-bold border-b-2 border-[#cccccc] rounded-t-lg"
+            >
+              Elite Suite
+            </div>
+            <div class="flex items-center bg-[#e5e5e5] py-4 px-6 rounded-b-lg">
+              <div class="h-[341px] flex flex-col items-center justify-between">
+                <p class="text-center text-[#000000] max-w-lg">
+                  With cutting-edge technology and tried-and-true methods, AWT
+                  delivers security protection for all corporate endpoints
+                  against complex cyber threats.
+                </p>
+
+                <button
+                  class="text-[#4d4d4d] w-44 bg-white py-3 px-5 flex items-center justify-center border-2 border-[#4d4d4d] rounded-lg"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div
+        class="p-12 mb-12 lg:p-20 bg-[#4d4d4d] text-white max-w-screen mx-auto"
+      >
+        <!-- Flex-container -->
+        <div
+          class="flex flex-col-reverse justify-around lg:flex-row lg:space-y-0 lg:justify-between"
+        >
+          <!-- Content container -->
+          <div class="flex flex-col space-y-6 max-w-lg md:max-w-xl">
+            <h2 class="mt-[20px] font-bold text-3xl lg:text-4xl">
+              Partnership Program - Innovation meets Collaboration and Growth
+            </h2>
+
+            <p>
+              At AWT, we are passionate about driving innovation, fostering
+              collaboration, and accelarating growth. Our Partnership Program
+              embodies these values and provides enterpreneurs, small business
+              owners, and seasoned professionals with the tools, resources, and
+              experties to achieve their goals. By joining our community of
+              like-minded individuals, you'll gain access to the latest cloud
+              solutions, receive personalized support from our team of experts,
+              and take your business to the next level. Partner with AWT today
+              and unlock unparalled opportunities for success!
+            </p>
+
+            <a
+              href="#"
+              class="flex justify-center items-center py-3 px-5 w-[220px] h-[44px] border-2 border-white rounded-md hover:text-[#0000cc] hover:bg-gray-300 hover:border-black duration-150"
+              >Be A Partner</a
+            >
+          </div>
+          <div>
+            <img src="../img/new/partnership-image.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Description  -->
+    <section>
+      <div class="max-w-screen mx-auto mt-12 mb-12">
+        <div
+          class="flex flex-col-reverse p-4 items-center justify-center lg:flex-row lg:space-y-0 lg:space-x-12"
+        >
+          <!-- image -->
+          <div class="m-6">
+            <img src="../img/illustration.png" alt="" />
+          </div>
+
+          <!-- Content -->
+          <div
+            class="flex flex-col items-center justify-center mb-5 max-w-lg space-y-6 text-[#4d4d4d] lg:space-y-8 lg:items-start"
+          >
+            <h3 class="text-2xl font-bold md:text-4xl">
+              Why AccessWorld Tech?
+            </h3>
+            <p class="font-semibold text-base">
+              We want you to experience the convenience of locally sourced cloud
+              services with customizable plans, a data center in Nepal, and
+              exclusive support, all without the need for international payment
+              methods.
+            </p>
+            <a
+              href="#"
+              class="flex items-center justify-center text-black border-2 border-black py-3 px-5 w-[220px] h-[44px] rounded-md hover:text-white hover:bg-[#0000cc] duration-150"
+              >Contact US</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="max-w-screen bg-[#292929] text-white p-6 lg:p-20 lg:pb-4 md:h-[400px]"
+      >
+        <!-- Flex container -->
+        <div class="flex space-x-28">
+          <!-- Logo and social -->
+          <div class="flex flex-col space-y-2 md:space-y-16">
+            <!-- logo -->
+            <div class="max-w-sm">
+              <img src="../img/awt-acronym-logo.svg" alt="" />
+            </div>
+            <!-- social flex -->
+            <div class="flex max-w-sm space-x-2">
+              <div>
+                <img src="../img/icons/icon-medium.png" alt="" />
+              </div>
+              <div>
+                <img src="../img/icons/facebook-icon.png" alt="" />
+              </div>
+              <div>
+                <img src="../img/icons/icon-instagram.png" alt="" />
+              </div>
+              <div>
+                <img src="../img/icons/icon-linkedin.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- About,services,solutions etc. -->
+          <div class="flex mt-14 space-x-6">
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="text-white font-medium">About</a>
+              <a href="#" class="text-white font-medium">Services</a>
+              <a href="#" class="text-white font-medium">Solutions</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="font-medium">Privacy Policy</a>
+              <a href="#" class="font-medium">Terms & Conditions</a>
+              <a href="#" class="font-medium">Sitemap</a>
+            </div>
+            <div class="hidden md:flex md:flex-col md:space-y-6">
+              <a
+                href="#"
+                class="flex justify-center items-center w-[260px] h-[44px] py-3 px-5 border-2 border-white rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+                >Login</a
+              >
+              <div
+                class="flex items-center border-2 justify-between w-[398px] h-[44px] bg-white rounded-xl active:border-green-500"
+              >
+                <input
+                  type="text"
+                  class="border-none placeholder:text-gray-400 pl-2 focus:outline-none text-black"
+                  placeholder="Enter your search"
+                />
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="cursor-pointer pr-4 w-10 h-10 font-extrabold text-gray-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Flex-container  -->
+        <div
+          class="mt-6 flex flex-col justify-center space-y-2 md:justify-start md:flex-row md:space-y-0 md:space-x-16 lg:mt-16"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; Copyright 2012-2023| AccessWorld Tech P.(L)
+          </p>
+          <p class="text-xs md:text-sm">
+            Patan Dhoka, 5F BhatBhateni Super Market, Krishna Galli, Lalitpur,
+            Nepal
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header id="navbar" class="sticky top-0 border-b shadow-sm bg-white z-30">
+      <nav class="relative">
+        <!-- Flex Container -->
+        <div
+          class="flex justify-between px-4 h-[110px] items-center lg:justify-around md:h-[140px] lg:mx-4 xl:max-w-[1920px] xl:mx-auto"
+        >
+          <!-- Logo -->
+          <div class="items-left">
+            <img
+              src="https://www.accessworld.net/img/logos/primary-gradient-horizontal-lockup.png"
+              alt="awt-logo"
+              class="w-32 md:w-[248px] md:h-87"
+            />
+          </div>
+          <!-- Menu -->
+          <div class="hidden lg:inline">
+            <!-- first dropdown menu -->
+            <div class="group flex space-x-4 text-sm">
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Services</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">Solutions</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+              <div
+                class="flex space-x-4 group-hover:cursor-pointer items-center"
+              >
+                <button class="text-[#4d4d4d] font-bold">About</button>
+                <img src="../img/icons/arrow-down.png" class="w-5 h-5" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+
+          <!-- Flex-container -->
+          <div class="hidden lg:inline-flex space-x-4">
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#0000cc] w-[220px] h-[44px] px-[60px] py-[10px] border-[2px] border-[#0000cc] rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="hidden font-bold md:block text-[#4D4D4D] w-[220px] h-[44px] px-20 py-[10px] border-[2px] border-[#4D4D4D] rounded-md hover:border-black hover:text-[#0000cc] hover:scale-95 duration-150"
+              >Login</a
+            >
+          </div>
+
+          <!-- Right search and social -->
+          <div class="">
+            <!-- Flex-container -->
+            <div class="flex space-x-4 md:space-x-12">
+              <!-- Search -->
+              <div class="hidden lg:inline-flex space-x-6 md:mt-4">
+                <img src="../img/icons/search.png" class="w-8 h-8" alt="" />
+                <img
+                  src="../img/icons/shopping-cart.png"
+                  class="w-8 h-8"
+                  alt=""
+                />
+              </div>
+
+              <!-- flex-col container -->
+              <div class="group flex flex-col">
+                <!-- Dropdown -->
+                <div
+                  class="hidden w-[122px] h-[40px] border-2 border-black rounded-md text-center items-center justify-center lg:flex lg:space-x-8 group-hover:cursor-pointer"
+                >
+                  <select
+                    name=""
+                    id="currency"
+                    class="space-x-8 group-hover:cursor-pointer focus:outline-none px-2 appearance-none"
+                  >
+                    <option value="currency">NPR</option>
+                    <option value="currency">INR</option>
+                    <option value="currency">USD</option>
+                  </select>
+                  <div class="">
+                    <img src="../img/icons/Polygon 5.png" alt="" />
+                  </div>
+                </div>
+
+                <!-- social -->
+                <div
+                  class="absolute top-0 right-4 mt-3 flex space-x-3 items-center lg:relative lg:ml-4"
+                >
+                  <!-- Medium -->
+                  <a href="#">
+                    <img src="../img/icons/medium.png" class="w-5 h-5" alt="" />
+                  </a>
+                  <!-- Facebook -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/facebook.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- instagram -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/instagram.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                  <!-- Linkedin -->
+                  <a href="#">
+                    <img
+                      src="../img/icons/linkedin.png"
+                      class="w-5 h-5"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hamburger Icon -->
+
+            <button
+              id="menu-btn"
+              class="block mt-10 hamburger lg:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-[#f4f8f9] sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <!-- <div class="w-full hover:bg-gray-500 hover:bg-opacity-40"><a href="#">Services</a></div> -->
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Solutions</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition-all hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Be A Partner</a
+            >
+            <a
+              href="#"
+              class="block w-full text-center py-3 px-5 duration-150 transition hover:bg-opacity-40 hover:bg-white hover:text-[#0000cc]"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- hero section -->
+    <section class="relative bg-gradient-to-r from-[#0000cc] to-[#00EEFF]">
+      <div class="lg:max-w-[1920px] lg:h-[450px]">
+        <div class="flex flex-col space-y-10 lg:items-left lg:ml-[70px]">
+          <h2
+            class="max-w-3xl leading-relaxed text-3xl font-extrabold text-white ml-5 mt-10 lg:mt-[68px] lg:text-5xl lg:mb-[60px] md:mb-[45px]"
+          >
+            Power your business with secure cloud solutions. Contact us now
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="m-10 lg:mx-24">
+        <p class="text-xl text-[#4d4d4d] font-bold max-w-lg">
+          Get in touch today and unlock the power of secure, reliable, and
+          scalable cloud computing solutions for your business.
+        </p>
+
+        <p class="mt-6 text-4xl font-bold text-[#4d4d4d] max-w-2xl">
+          Let's take your digital transformation to the next level.
+        </p>
+
+        <form class="mt-6">
+          <div class="flex flex-col space-y-4">
+            <div
+              class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4"
+            >
+              <input
+                type="text"
+                class="outline-none border-2 rounded-lg py-2 px-6 w-[350px] placeholder:text-[#cccccc] placeholder:font-bold"
+                placeholder="Enter your full name"
+              />
+              <input
+                type="number"
+                class="outline-none border-2 rounded-lg py-2 px-6 w-[350px] placeholder:text-[#cccccc] placeholder:font-bold"
+                placeholder="Enter your contact number"
+              />
+              <input
+                type="email"
+                class="outline-none border-2 rounded-lg py-2 px-6 w-[350px] placeholder:text-[#cccccc] placeholder:font-bold"
+                placeholder="Enter your email address"
+              />
+            </div>
+
+            <div
+              class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4"
+            >
+              <input
+                type="text"
+                class="outline-none border-2 rounded-lg py-2 px-6 w-[350px] placeholder:text-[#cccccc] placeholder:font-bold"
+                placeholder="Company Size"
+              />
+              <input
+                type="text"
+                class="outline-none border-2 rounded-lg py-2 px-6 w-[350px] placeholder:text-[#cccccc] placeholder:font-bold"
+                placeholder="Company Address"
+              />
+            </div>
+          </div>
+
+          <textarea
+            name=""
+            id=""
+            cols="135"
+            rows="10"
+            class="outline-none border-2 rounded-lg mt-4 p-4 placeholder:text-[#cccccc] placeholder:font-bold"
+            placeholder="What would you like to discuss about?"
+          ></textarea>
+        </form>
+
+        <div class="mt-4">
+          <p class="text-2xl font-bold text-[#4d4d4d]">
+            You can also reach us through our social media.
+          </p>
+
+          <div class="mt-4">
+            <div class="flex flex-col space-y-4">
+              <div class="flex items-center space-x-6">
+                <img src="../img/icons/icon-facebook-square.png" alt="" />
+                <p class="text-[#0000cc] border-b-2 border-[#0000cc] font-bold">
+                  Start a conversation on Facebook
+                </p>
+                <img src="../img/icons/next.png" class="w-8" alt="" />
+              </div>
+              <div class="flex items-center space-x-6">
+                <img
+                  src="../img/icons/icon-instagram@2x.png"
+                  class="w-12"
+                  alt=""
+                />
+                <p class="text-[#0000cc] border-b-2 border-[#0000cc] font-bold">
+                  Start a conversation on Instagram
+                </p>
+                <img src="../img/icons/next.png" class="w-8" alt="" />
+              </div>
+              <div class="flex items-center space-x-6">
+                <img
+                  src="../img/icons/icon-linkedin@2x.png"
+                  class="w-12"
+                  alt=""
+                />
+                <p class="text-[#0000cc] border-b-2 border-[#0000cc] font-bold">
+                  Start a conversation on Linkedin
+                </p>
+                <img src="../img/icons/next.png" class="w-8" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="max-w-screen bg-[#292929] text-white p-6 lg:p-20 lg:pb-4 md:h-[400px]"
+      >
+        <!-- Flex container -->
+        <div class="flex space-x-28">
+          <!-- Logo and social -->
+          <div class="flex flex-col space-y-2 md:space-y-16">
+            <!-- logo -->
+            <div class="max-w-sm">
+              <img src="../img/awt-acronym-logo.svg" alt="" />
+            </div>
+            <!-- social flex -->
+            <div class="flex max-w-sm space-x-2">
+              <div>
+                <img src="../img/icons/icon-medium.png" alt="" />
+              </div>
+              <div>
+                <img src="../img/icons/facebook-icon.png" alt="" />
+              </div>
+              <div>
+                <img src="../img/icons/icon-instagram.png" alt="" />
+              </div>
+              <div>
+                <img src="../img/icons/icon-linkedin.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- About,services,solutions etc. -->
+          <div class="flex mt-14 space-x-6">
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="text-white font-medium">About</a>
+              <a href="#" class="text-white font-medium">Services</a>
+              <a href="#" class="text-white font-medium">Solutions</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="font-medium">Privacy Policy</a>
+              <a href="#" class="font-medium">Terms & Conditions</a>
+              <a href="#" class="font-medium">Sitemap</a>
+            </div>
+            <div class="hidden md:flex md:flex-col md:space-y-6">
+              <a
+                href="#"
+                class="flex justify-center items-center w-[260px] h-[44px] py-3 px-5 border-2 border-white rounded-md hover:border-opacity-40 hover:scale-95 duration-150"
+                >Login</a
+              >
+              <div
+                class="flex items-center border-2 justify-between w-[398px] h-[44px] bg-white rounded-xl active:border-green-500"
+              >
+                <input
+                  type="text"
+                  class="border-none placeholder:text-gray-400 pl-2 focus:outline-none text-black"
+                  placeholder="Enter your search"
+                />
+                <button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="cursor-pointer pr-4 w-10 h-10 font-extrabold text-gray-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Flex-container  -->
+        <div
+          class="mt-6 flex flex-col justify-center space-y-2 md:justify-start md:flex-row md:space-y-0 md:space-x-16 lg:mt-16"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; Copyright 2012-2023| AccessWorld Tech P.(L)
+          </p>
+          <p class="text-xs md:text-sm">
+            Patan Dhoka, 5F BhatBhateni Super Market, Krishna Galli, Lalitpur,
+            Nepal
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
